@@ -14,6 +14,8 @@ const ImageWithText = ({
   contentClassName,
   mediaClassName,
   sameWidth = false,
+  showList = false,
+  bulletPoints = [],
 }) => {
   const showImage = !!image && !video;
   const showVideo = !!video && !image;
@@ -33,7 +35,7 @@ const ImageWithText = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 gap-6 sm:gap-8 items-center",
+        "grid grid-cols-1 gap-6 sm:gap-8 items-stretch",
         finalGridClass,
         containerClassName
       )}
@@ -41,7 +43,7 @@ const ImageWithText = ({
       {/* MEDIA (Image or Video) */}
       <div
         className={cn(
-          "relative flex items-center w-full h-full rounded-3xl",
+          "relative flex items-stretch w-full h-full rounded-3xl",
           mediaAlignment,
           reverse ? "md:order-last" : "md:order-first",
           mediaClassName
@@ -53,7 +55,7 @@ const ImageWithText = ({
             alt={imageAlt}
             width={500}
             height={500}
-            className="object-cover w-full xl:w-[95%] h-full rounded-3xl"
+            className="object-cover w-full h-full rounded-3xl"
           />
         )}
 
@@ -73,17 +75,38 @@ const ImageWithText = ({
       <div
         className={cn(
           "flex flex-col justify-center h-full",
-          reverse ? "items-start" : "items-end",
+          reverse = "items-start",
           contentClassName
         )}
       >
-        <HeadingPara
-          title={title}
-          para={para}
-          className="gap-4"
-          classNameHeading=""
-          classNamePara="text-sm sm:text-base"
-        />
+        {title && (
+          <h3 className="text-xl sm:text-2xl font-bold mb-2">{title}</h3>
+        )}
+
+        {/* Render title */}
+        {title && (
+          <h3 className="text-xl sm:text-2xl font-bold mb-3 text-[#252525]">
+            {title}
+          </h3>
+        )}
+
+        {/* Render main paragraph */}
+        {para && (
+          <p className="text-base sm:text-lg mb-3 text-[#252525] whitespace-pre-line">
+            {para}
+          </p>
+        )}
+
+        {/* Render bullet points */}
+        {bulletPoints && bulletPoints.length > 0 && (
+          <div className="space-y-2 mt-2">
+            {bulletPoints.map((point, idx) => (
+              <p key={idx} className="text-base sm:text-lg text-[#252525]">
+                <strong>{point.bold}</strong> {point.text}
+              </p>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

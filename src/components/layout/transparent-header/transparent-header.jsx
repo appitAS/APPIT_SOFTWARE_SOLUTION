@@ -9,10 +9,12 @@ import WhoWeAreDropdown from '@/components/home/WhoWeAreDropdown';
 export default function TransparentHeader() {
   const pathname = usePathname();
   const isOracleAIPage = pathname === '/services/oracle-ai';
-  
+  const isHelixAiPage = pathname === '/products/helix-ai-pharma';
+  const isTrackNexus = pathname === '/products/track-nexus';
+
   // Track the pathname to detect route changes
   const prevPathRef = useRef(pathname);
-  const textColor = isOracleAIPage ? 'text-white' : 'text-[#000]';
+  const textColor = isOracleAIPage || isHelixAiPage || isTrackNexus? 'text-white' : 'text-[#000]';
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isWhatWeDoOpen, setIsWhatWeDoOpen] = useState(false);
@@ -194,7 +196,10 @@ export default function TransparentHeader() {
   };
 
   // Hamburger menu color
-  const hamburgerColor = isOracleAIPage && !scrolled ? 'bg-white' : 'bg-[#003366]';
+const hamburgerColor =
+  (isOracleAIPage || isHelixAiPage || isTrackNexus) && !scrolled
+    ? 'bg-white'
+    : 'bg-[#003366]';
 
   return (
     <header data-custom="transparent-header" className={`fixed w-full top-0 z-50 transition-all duration-150 ${scrolled ? 'bg-white shadow-sm' : 'bg-transparent'} font-jost`}>

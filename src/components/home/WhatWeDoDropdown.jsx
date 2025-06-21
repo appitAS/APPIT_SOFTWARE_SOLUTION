@@ -106,129 +106,116 @@ export default function WhatWeDoDropdown({ isOpen, onClose, isMobile = false }) 
   // Service items for the grid with mapped SVG paths
   const serviceItems = [
     {
-      icon: 'first', // Oracle AI
+      icon: 'first',
       title: 'Oracle AI',
-      subtitle: 'Oracle AI Solutions'
+      subtitle: 'Oracle AI Solutions',
+      href: '/services/oracle-ai'
     },
     {
-      icon: 'first', // Service Now AI
+      icon: 'first',
       title: 'Service Now AI',
-      subtitle: 'ServiceNow AI Solutions'
+      subtitle: 'ServiceNow AI Solutions',
+      href: '/services/service-now-ai'
     },
     {
-      icon: 'second', // Managed Services
+      icon: 'second',
       title: 'Managed Services',
-      subtitle: 'Outsourced IT Support'
+      subtitle: 'Outsourced IT Support',
+      href: '/services/managed-services'
     },
     {
-      icon: 'third', // Cyber Security
+      icon: 'third',
       title: 'Cyber Security GRC Solutions',
-      subtitle: 'Outsourced IT Support'
+      subtitle: 'Outsourced IT Support',
+      href: '/services/cyber-security'
     },
     {
-      icon: 'fourth', // Offshore Development
+      icon: 'fourth',
       title: 'Offshore Development Center',
-      subtitle: 'Cost-effective, Scalable, Reliable'
+      subtitle: 'Cost-effective, Scalable, Reliable',
+      href: '/services/offshore-development'
     },
     {
-      icon: 'fifth', // E-Commerce
+      icon: 'fifth',
       title: 'E-Commerce Services',
-      subtitle: 'AI-Powered Solutions for Smarter Shopping'
+      subtitle: 'AI-Powered Solutions for Smarter Shopping',
+      href: '/services/e-commerce'
     },
     {
-      icon: 'sixth', // Digital Transformation
+      icon: 'sixth',
       title: 'Digital Transformation Services',
-      subtitle: 'Innovate. Automate. Grow'
+      subtitle: 'Innovate. Automate. Grow',
+      href: '/services/digital-transformation'
     },
     {
-      icon: 'seventh', // Adobe Commerce
+      icon: 'seventh',
       title: 'Adobe Commerce (Magento)',
-      subtitle: 'Powering E-Commerce with Adobe Commerce Expertise'
+      subtitle: 'Powering E-Commerce with Adobe Commerce Expertise',
+      href: '/services/adobe-commerce'
     },
     {
-      icon: 'eighth', // Magento Open Source
+      icon: 'eighth',
       title: 'Magento Open Source',
-      subtitle: 'Flexible E-Commerce Solutions with Magento Open Source'
+      subtitle: 'Flexible E-Commerce Solutions with Magento Open Source',
+      href: '/services/magento-open-source'
     },
     {
-      icon: 'nineth', // GenMind
+      icon: 'nineth',
       title: 'GenMind Consulting',
-      subtitle: 'From Strategy to Execution'
+      subtitle: 'From Strategy to Execution',
+      href: '/services/genmind-consulting'
     },
     {
-      icon: 'tenth', // BigCommerce
+      icon: 'tenth',
       title: 'BigCommerce',
-      subtitle: 'Scalable Solutions with BigCommerce Expertise'
+      subtitle: 'Scalable Solutions with BigCommerce Expertise',
+      href: '/services/bigcommerce'
     },
     {
-      icon: 'eleventh', // Shopify
+      icon: 'eleventh',
       title: 'Shopify',
-      subtitle: 'Seamless E-Commerce with Shopify Solutions'
+      subtitle: 'Seamless E-Commerce with Shopify Solutions',
+      href: '/services/shopify'
     }
   ];
-
-  // Industry items for the grid with updated SVG paths
-  /* 
-  const industryItems = [
-    {
-      icon: 'thermal', // Updated to first.svg
-      title: 'Thermal Power',
-      subtitle: 'Heat, Conversion, Turbines, Electricity'
-    },
-    {
-      icon: 'oil', // Updated to second.svg
-      title: 'Oil and Gas',
-      subtitle: 'Energy, Exploration, Extraction, Infrastructure'
-    },
-    {
-      icon: 'manu', // Updated to third.svg
-      title: 'Manufacturing Supply Chain',
-      subtitle: 'Production, Procurement, Logistics'
-    },
-    {
-      icon: 'edible', // Updated to fourth.svg
-      title: 'Edible Oils',
-      subtitle: 'Cooking, Nutrition, Extraction, Health'
-    },
-    {
-      icon: 'const', // Updated to fifth.svg
-      title: 'Construction & Real Estates',
-      subtitle: 'Design, Development & Infrastructure'
-    }
-  ];
-  */
 
   // Products items with new content
   const productItems = [
     {
       icon: 'first',
       title: 'AskGenie AI',
-      subtitle: 'Intelligent Self-Serve Support'
+      subtitle: 'Intelligent Self-Serve Support',
+      href: '/platform/askgenie-ai'
     },
     {
       icon: 'first',
       title: 'SmartChat AI',
-      subtitle: 'Powered by Gen AI Agent Co-Pilot'
+      subtitle: 'Powered by Gen AI Agent Co-Pilot',
+      href: '/platform/smartchat-ai'
     },
     {
       icon: 'second',
       title: 'AI ChartWorks',
-      subtitle: 'AI-Powered Low-Code Builder'
+      subtitle: 'AI-Powered Low-Code Builder',
+      href: '/platform/ai-chartworks'
     },
     {
       icon: 'sale',
       title: 'SalesBot AI',
-      subtitle: 'Conversational Buying Guidance'
+      subtitle: 'Conversational Buying Guidance',
+      href: '/platform/salesbot-ai'
     },
     {
       icon: 'gen1',
       title: 'InsightsGen AI',
-      subtitle: 'Advanced User Behaviour Analytics'
+      subtitle: 'Advanced User Behaviour Analytics',
+      href: '/platform/insightsgen-ai'
     },
     {
       icon: 'whatsapp',
       title: 'WhatsAppBot AI',
-      subtitle: 'Enhance Your Brand'
+      subtitle: 'Enhance Your Brand',
+      href: '/platform/whatsappbot-ai'
     }
   ];
 
@@ -237,27 +224,44 @@ export default function WhatWeDoDropdown({ isOpen, onClose, isMobile = false }) 
     {
       icon: 'legal',
       title: 'Legal AI Assistance',
-      subtitle: 'AI Legal Document Automation'
+      subtitle: 'AI Legal Document Automation',
+      href: '/products/ai-lawyers'
     },
     {
       icon: 'talent',
       title: 'AI-Driven Talent Acquisition',
-      subtitle: 'Smart AI Hiring Solutions'
+      subtitle: 'Smart AI Hiring Solutions',
+      href: '/products/ai-talent-acquisition'
+    },
+    {
+      icon: 'ats',
+      title: 'Track Nexus',
+      subtitle: 'AI-Powered Tracking',
+      href: '/products/track-nexus'
     },
     {
       icon: 'crm',
-      title: 'All-in-One CRM',
-      subtitle: 'Sales & Support Simplified'
+      title: 'Helix AI Pharma',
+      subtitle: 'AI Solutions for Pharma Industry',
+      href: '/products/helix-ai-pharma'
     },
     {
       icon: 'ats',
       title: 'ATS (Application Tracking System)',
-      subtitle: 'Optimize Talent Acquisition'
+      subtitle: 'Optimize Talent Acquisition',
+      href: '/products/ats'
+    },
+    {
+      icon: 'crm',
+      title: 'All-in-One CRM',
+      subtitle: 'Sales & Support Simplified',
+      href: '/products/all-in-one-crm'
     },
     {
       icon: 'outlook',
       title: 'Outlook AI Copilot',
-      subtitle: 'Assist. Organize. Respond'
+      subtitle: 'Assist. Organize. Respond',
+      href: '/products/outlook-ai-copilot'
     }
   ];
 
@@ -266,8 +270,6 @@ export default function WhatWeDoDropdown({ isOpen, onClose, isMobile = false }) 
     switch(activeTab) {
       case 'Services':
         return serviceItems;
-      /* case 'Industries':
-        return industryItems; */
       case 'Products':
         return platformItems;
       case 'Platform':
@@ -278,7 +280,7 @@ export default function WhatWeDoDropdown({ isOpen, onClose, isMobile = false }) 
   };
 
   // Sidebar tabs
-  const sidebarTabs = ['Services', /* 'Industries', */ 'Products', 'Platform'];
+  const sidebarTabs = ['Services', 'Products', 'Platform'];
 
   if (!isOpen && animationState === 'closed') {
     return null;
@@ -308,54 +310,34 @@ export default function WhatWeDoDropdown({ isOpen, onClose, isMobile = false }) 
             ))}
           </div>
           <div className="p-4 grid grid-cols-1 gap-4">
-            {activeItems.map((item, index) => {
-              const ItemComponent = 
-                (activeTab === 'Platform' && item.title === 'AskGenie AI') ? Link :
-                (activeTab === 'Services' && item.title === 'Oracle AI') ? Link :
-                (activeTab === 'Products' && item.title === 'Legal AI Assistance') ? Link : 'div';
-              const itemProps = 
-                (activeTab === 'Platform' && item.title === 'AskGenie AI') ? { href: '/platform', prefetch: true } :
-                (activeTab === 'Services' && item.title === 'Oracle AI') ? { href: '/services/oracle-ai', prefetch: true } :
-                (activeTab === 'Products' && item.title === 'Legal AI Assistance') ? { href: '/products/ai-lawyers', prefetch: true } : {};
-              
-              return (
-                <ItemComponent 
-                  key={index}
-                  {...itemProps}
-                  onClick={(e) => {
-                    // For navigation links, ensure the dropdown is closed
-                    if (onClose) {
-                      onClose();
-                      // Reset the dropdown state in sessionStorage
-                      if (typeof window !== 'undefined') {
-                        sessionStorage.setItem('isWhatWeDoOpen', 'false');
-                      }
-                    }
-                    handleItemClick(e);
-                  }}
-                  className="flex items-center gap-3 p-2 rounded transition-all duration-300 group hover:bg-[#F0F8FF]"
-                  style={{
-                    transitionDelay: `${index * 30}ms`,
-                    opacity: animationState === 'opening' || animationState === 'open' ? 1 : 0,
-                    transform: animationState === 'opening' || animationState === 'open' ? 'translateX(0)' : 'translateX(-5px)'
-                  }}
-                >
-                  <div className="w-10 h-10 flex-shrink-0 rounded-full flex items-center justify-center">
-                    <Image 
-                      src={`/images/dropdown/${item.icon}.svg`}
-                      alt={item.title}
-                      width={48}
-                      height={48}
-                      className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-semibold group-hover:text-[#0066B3] transition-colors duration-300">{item.title}</h4>
-                    <p className="text-xs text-gray-600 group-hover:text-[#0066B3] transition-colors duration-300">{item.subtitle}</p>
-                  </div>
-                </ItemComponent>
-              );
-            })}
+            {activeItems.map((item, index) => (
+              <Link 
+                key={index}
+                href={item.href}
+                prefetch={true}
+                onClick={(e) => handleItemClick(e)}
+                className="flex items-center gap-3 p-2 rounded transition-all duration-300 group hover:bg-[#F0F8FF]"
+                style={{
+                  transitionDelay: `${index * 30}ms`,
+                  opacity: animationState === 'opening' || animationState === 'open' ? 1 : 0,
+                  transform: animationState === 'opening' || animationState === 'open' ? 'translateX(0)' : 'translateX(-5px)'
+                }}
+              >
+                <div className="w-10 h-10 flex-shrink-0 rounded-full flex items-center justify-center">
+                  <Image 
+                    src={`/images/dropdown/${item.icon}.svg`}
+                    alt={item.title}
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                  />
+                </div>
+                <div>
+                  <h4 className="text-sm font-semibold group-hover:text-[#0066B3] transition-colors duration-300">{item.title}</h4>
+                  <p className="text-xs text-gray-600 group-hover:text-[#0066B3] transition-colors duration-300">{item.subtitle}</p>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </div>
@@ -367,7 +349,8 @@ export default function WhatWeDoDropdown({ isOpen, onClose, isMobile = false }) 
   return (
     <div 
       className={`fixed inset-0 top-[96px] z-40 w-full overflow-hidden transition-all duration-200 ease-out ${getAnimationClasses()}`} 
-      style={{ background: 'transparent' }}>
+      style={{ background: 'transparent' }}
+    >
       {/* Main Dropdown Container */}
       <div className="w-full mx-auto py-2.5 flex-col justify-center items-center">
         <div className={`flex flex-col w-full bg-white shadow-lg transition-all duration-200 ease-out ${getAnimationClasses()}`}>
@@ -407,60 +390,34 @@ export default function WhatWeDoDropdown({ isOpen, onClose, isMobile = false }) 
                 columnGap: '24px'
               }}
             >
-              {activeItems.map((item, index) => {
-                const ItemComponent = 
-                  (activeTab === 'Platform' && item.title === 'AskGenie AI') ? Link :
-                  (activeTab === 'Services' && item.title === 'Oracle AI') ? Link :
-                  (activeTab === 'Products' && item.title === 'Legal AI Assistance') ? Link : 'div';
-                const itemProps = 
-                  (activeTab === 'Platform' && item.title === 'AskGenie AI') ? { href: '/platform', prefetch: true } :
-                  (activeTab === 'Services' && item.title === 'Oracle AI') ? { href: '/services/oracle-ai', prefetch: true } :
-                  (activeTab === 'Products' && item.title === 'Legal AI Assistance') ? { href: '/products/ai-lawyers', prefetch: true } : {};
-                
-                return (
-                  <ItemComponent 
-                    key={index}
-                    {...itemProps}
-                    className="flex items-center gap-4 p-2 cursor-pointer transition-all duration-300 hover:translate-x-1 rounded group hover:bg-[#F0F8FF]" 
-                    style={{ 
-                      transitionDelay: `${(index % 3) * 50 + Math.floor(index / 3) * 30}ms`,
-                      opacity: animationState === 'opening' || animationState === 'open' ? 1 : 0,
-                      transform: animationState === 'opening' || animationState === 'open' ? 'translateX(0)' : 'translateX(-5px)'
-                    }}
-                    onClick={(e) => {
-                      // For navigation links, make sure to close the dropdown
-                      if (onClose) {
-                        onClose();
-                        // Reset the dropdown state in sessionStorage
-                        if (typeof window !== 'undefined') {
-                          sessionStorage.setItem('isWhatWeDoOpen', 'false');
-                        }
-                      }
-                      
-                      // For non-navigation items, use the regular handleItemClick
-                      if (!(activeTab === 'Platform' && item.title === 'AskGenie AI') &&
-                          !(activeTab === 'Services' && item.title === 'Oracle AI') &&
-                          !(activeTab === 'Products' && item.title === 'Legal AI Assistance')) {
-                        handleItemClick(e);
-                      }
-                    }}
-                  >
-                    <div className="w-[48px] h-[48px] flex-shrink-0 aspect-square rounded-full flex items-center justify-center overflow-hidden">
-                      <Image 
-                        src={`/images/dropdown/${item.icon}.svg`}
-                        alt={item.title}
-                        width={48}
-                        height={48}
-                        className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
-                      />
-                    </div>
-                    <div className="flex flex-col">
-                      <h3 className="self-stretch text-black font-['Jost'] text-[16px] font-semibold leading-[120%] group-hover:text-[#0066B3] transition-colors duration-300">{item.title}</h3>
-                      <p className="self-stretch text-black font-['Jost'] text-[12px] italic font-normal leading-[120%] group-hover:text-[#0066B3] transition-colors duration-300">{item.subtitle}</p>
-                    </div>
-                  </ItemComponent>
-                );
-              })}
+              {activeItems.map((item, index) => (
+                <Link 
+                  key={index}
+                  href={item.href}
+                  prefetch={true}
+                  className="flex items-center gap-4 p-2 cursor-pointer transition-all duration-300 hover:translate-x-1 rounded group hover:bg-[#F0F8FF]" 
+                  style={{ 
+                    transitionDelay: `${(index % 3) * 50 + Math.floor(index / 3) * 30}ms`,
+                    opacity: animationState === 'opening' || animationState === 'open' ? 1 : 0,
+                    transform: animationState === 'opening' || animationState === 'open' ? 'translateX(0)' : 'translateX(-5px)'
+                  }}
+                  onClick={(e) => handleItemClick(e)}
+                >
+                  <div className="w-[48px] h-[48px] flex-shrink-0 aspect-square rounded-full flex items-center justify-center overflow-hidden">
+                    <Image 
+                      src={`/images/dropdown/${item.icon}.svg`}
+                      alt={item.title}
+                      width={48}
+                      height={48}
+                      className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="flex flex-col">
+                    <h3 className="self-stretch text-black font-['Jost'] text-[16px] font-semibold leading-[120%] group-hover:text-[#0066B3] transition-colors duration-300">{item.title}</h3>
+                    <p className="self-stretch text-black font-['Jost'] text-[12px] italic font-normal leading-[120%] group-hover:text-[#0066B3] transition-colors duration-300">{item.subtitle}</p>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
         </div>
