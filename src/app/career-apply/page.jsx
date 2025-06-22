@@ -1,6 +1,6 @@
 'use client';
 
-import { Suspense } from 'react';
+import { Suspense, useEffect } from 'react';
 import ScrollToTopButton from '../../components/home/ScrollToTopButton';
 import AboveFooterSection from '../../components/home/AboveFooterSection';
 import Footer from '../../components/home/Footer';
@@ -10,8 +10,8 @@ import CareerApplyBreadcrumb from '../../components/career/CareerApplyBreadcrumb
 import JobApplicationSection from '../../components/career/JobApplicationSection';
 import Benefits from '../../components/career/Benefits';
 
-
 const CareerApplyContent = () => {
+
   return (
     <>
       <Header />
