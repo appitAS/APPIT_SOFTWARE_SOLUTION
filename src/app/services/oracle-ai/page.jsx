@@ -51,12 +51,17 @@ As a trusted partner, AppitSoftware provides ongoing support and innovation—tr
     },
 ];
 
+const oracleHeroData = {
+    title: "Oracle AI",
+    para: "Revolutionize your operations with AI-driven insights, intelligent automation, and enhanced customer experiences.",
+    videoSrc: "/videos/hero_technology.mp4",
+}
 const Page = () => {
     return (
         <>
             <TransparentHeader />
             <HideDefaultHeader />
-            <OracleHero />
+            <OracleHero data={oracleHeroData}  className="md:ml-[51px] mr-auto" />
 
             <ImageWithTextSection
                 sectionsData={sectionsData}

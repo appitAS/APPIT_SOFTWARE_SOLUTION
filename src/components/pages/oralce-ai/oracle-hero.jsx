@@ -3,11 +3,12 @@ import Section from '../../layout/section-box'
 import Container from '../../layout/container'
 import HeadingPara from '../../layout/heading'
 
-const OracleHero = () => {
+const OracleHero = ({data,className}) => {
+    const { title, para, videoSrc,imageSrc,btnTitle } = data || {}
     return (
-        <Section videoSrc='/videos/hero_technology.mp4' className='min-h-screen'>
-            <Container>
-                <HeadingPara title='Oracle AI' para='Revolutionize your operations with AI-driven insights, intelligent automation, and enhanced customer experiences.' classNameHeading='text-4xl sm:text-5xl md:text-6xl xl:text-7xl 3xl:text-[100px] text-white' classNamePara='font-semibold text-base md:text-lg xl:text-2xl 3xl:text-[27px]' className='max-w-[600px] text-white mt-10 sm:mt-0' />
+        <Section imageSrc={imageSrc} videoSrc={videoSrc} className='min-h-screen'>
+            <Container className={className}>
+                <HeadingPara title={title} para={para} btnTitle={btnTitle} classNameHeading='text-3xl sm:text-4xl md:text-5xl xl:text-[53px] 3xl:text-[100px] text-white xl:whitespace-nowrap' classNamePara='font-normal text-base md:text-lg xl:text-2xl 3xl:text-[27px] max-w-[600px]' className='text-white mt-10 sm:mt-0' />
             </Container>
         </Section>
     )

@@ -28,7 +28,7 @@ const ImageWithTextSection = ({
         />
       ))}
 
-      <Container className="space-y-6 xl:space-y-10">
+      <Container className="space-y-6 xl:space-y-10 ">
         {sectionsData.map((section, idx) => (
           <ImageWithText
             key={idx}

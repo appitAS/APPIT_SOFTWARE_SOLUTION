@@ -8,7 +8,7 @@ import WhoWeAreDropdown from '@/components/home/WhoWeAreDropdown';
 
 export default function TransparentHeader() {
   const pathname = usePathname();
-  const isOracleAIPage = pathname === '/services/oracle-ai';
+  const isOracleAIPage = pathname.includes('/services');
   
   // Track the pathname to detect route changes
   const prevPathRef = useRef(pathname);

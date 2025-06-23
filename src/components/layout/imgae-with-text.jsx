@@ -14,6 +14,14 @@ const ImageWithText = ({
   contentClassName,
   mediaClassName,
   sameWidth = false,
+  highlightText = "",
+  highlightTextStyle = "",
+  classNameHeading = "",
+  sectionHeading = false,
+  classNamePara = "text-sm sm:text-base",
+  paraHighlightText = "",
+  paraHighlightTextStyle = "",
+  lineByLine = [],
 }) => {
   const showImage = !!image && !video;
   const showVideo = !!video && !image;
@@ -60,7 +68,7 @@ const ImageWithText = ({
         {showVideo && (
           <video
             src={video}
-            className="w-full h-full object-contain rounded-3xl"
+            className="w-full h-full object-cover rounded-3xl"
             playsInline
             muted
             autoPlay
@@ -81,8 +89,14 @@ const ImageWithText = ({
           title={title}
           para={para}
           className="gap-4"
-          classNameHeading=""
-          classNamePara="text-sm sm:text-base"
+          classNameHeading={classNameHeading}
+          classNamePara={classNamePara}
+          highlightText={highlightText}
+          highlightTextStyle={highlightTextStyle}
+          sectionHeading={sectionHeading}
+          paraHighlightText={paraHighlightText}
+          paraHighlightTextStyle={paraHighlightTextStyle}
+          lineByLine={lineByLine}
         />
       </div>
     </div>
