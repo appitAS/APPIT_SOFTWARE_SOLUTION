@@ -7,6 +7,7 @@ import {
 import ImageWithTextSection from "../../../components/layout/image-text-section";
 import DailyReportTable from "../../../components/layout/daily-report-table";
 import Benefits from "../../../components/pages/benefit-grid/benefit-section";
+import WorldwideTrusted from "../../../components/pages/benefit-grid/worldwide-text";
 import CTA from "../../../components/pages/cta";
 import FAQs from "../../../components/pages/faqs";
 import TrackNexusHero from "../../../components/pages/products/track-nexus/track-nexus-hero";
@@ -86,7 +87,7 @@ const page = () => {
       <TransparentHeader />
       <HideDefaultHeader />
       <TrackNexusHero />
-      <Benefits
+      <WorldwideTrusted
         heading={{
           title: "Trusted by over 1,000+ Companies Worldwide",
           highlightText: "1,000+",
