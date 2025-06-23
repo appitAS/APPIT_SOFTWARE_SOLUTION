@@ -7,6 +7,9 @@ export default function HideDefaultHeader() {
   const pathname = usePathname();
   const transparentHeaderPages = [
     '/products/ai-lawyers',
+    '/products/ai-talent-acquisition',
+    '/products/helix-ai-pharma',
+    '/products/track-nexus',    
     '/services/oracle-ai' // Add Oracle AI page path here
   ];
   const shouldHideDefaultHeader = transparentHeaderPages.includes(pathname);
