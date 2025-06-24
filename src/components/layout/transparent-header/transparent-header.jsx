@@ -16,7 +16,7 @@ export default function TransparentHeader() {
 
   // Track the pathname to detect route changes
   const prevPathRef = useRef(pathname);
-  const textColor = isOracleAIPage || isHelixAiPage || isTrackNexus? 'text-white' : 'text-[#000]';
+  const textColor = (isOracleAIPage || isHelixAiPage || isTrackNexus) ? 'text-white' : 'text-[#000]';
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isWhatWeDoOpen, setIsWhatWeDoOpen] = useState(false);
