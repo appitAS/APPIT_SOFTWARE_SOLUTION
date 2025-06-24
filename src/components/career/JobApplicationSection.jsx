@@ -20,7 +20,7 @@ const JobApplicationSection = ({ jobData }) => {
     name: "",
     phone: "",
     email: "",
-    message: jobData.job_title
+    message: jobData?.job_title
   });
 
   // File state
@@ -311,8 +311,8 @@ const handleSubmit = async (e) => {
       }
 
       // Send to your backend with job id as param
-      // const apiUrl = `http://localhost:5000/apply-job/${jobData.id}`;
-      const apiUrl = `https://appit-backend-wb0d.onrender.com/apply-job/${jobData.id}`;
+      // const apiUrl = `http://localhost:5000/apply-job/${jobData?.id}`;
+      const apiUrl = `https://appit-backend-wb0d.onrender.com/apply-job/${jobData?.id}`;
 
       const response = await axios.post(apiUrl, submitFormData, {
         headers: {
@@ -412,8 +412,8 @@ const handleSubmit = async (e) => {
               <div className="flex flex-col items-start gap-2.5 w-[calc(100%-70px)] sm:w-[calc(100%-80px)] md:w-[calc(100%-90px)]">
                 {/* Title and role */}
                 <div className="flex flex-col items-start gap-2.5">
-                  <h3 className="text-lg sm:text-xl md:text-[21px] font-semibold leading-[120%] text-black">{jobData.job_title}</h3>
-                  <p className="text-base md:text-[16px] font-semibold leading-[120%] text-[#252525]">{jobData.company}</p>
+                  <h3 className="text-lg sm:text-xl md:text-[21px] font-semibold leading-[120%] text-black">{jobData?.job_title}</h3>
+                  <p className="text-base md:text-[16px] font-semibold leading-[120%] text-[#252525]">{jobData?.company}</p>
                 </div>
 
                 {/* Icons with text */}
@@ -429,7 +429,7 @@ const handleSubmit = async (e) => {
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0">
                       <path fillRule="evenodd" clipRule="evenodd" d="M12.247 20.969C13.3971 19.9254 14.4615 18.7911 15.43 17.577C17.47 15.014 18.711 12.487 18.795 10.24C18.8282 9.32679 18.6771 8.41626 18.3505 7.56278C18.024 6.7093 17.5288 5.9304 16.8945 5.27259C16.2602 4.61478 15.4998 4.09157 14.6588 3.7342C13.8177 3.37684 12.9133 3.19265 11.9995 3.19265C11.0857 3.19265 10.1813 3.37684 9.34022 3.7342C8.49918 4.09157 7.73881 4.61478 7.10451 5.27259C6.4702 5.9304 5.975 6.7093 5.64846 7.56278C5.32192 8.41626 5.17076 9.32679 5.204 10.24C5.289 12.487 6.531 15.014 8.57 17.577C9.53846 18.7911 10.6029 19.9254 11.753 20.969C11.8637 21.069 11.946 21.1417 12 21.187L12.247 20.969ZM11.262 22.134C11.262 22.134 4 16.018 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10C20 16.018 12.738 22.134 12.738 22.134C12.334 22.506 11.669 22.502 11.262 22.134ZM12 12.8C12.7426 12.8 13.4548 12.505 13.9799 11.9799C14.505 11.4548 14.8 10.7426 14.8 10C14.8 9.25739 14.505 8.5452 13.9799 8.0201C13.4548 7.495 12.7426 7.2 12 7.2C11.2574 7.2 10.5452 7.495 10.0201 8.0201C9.495 8.5452 9.2 9.25739 9.2 10C9.2 10.7426 9.495 11.4548 10.0201 11.9799C10.5452 12.505 11.2574 12.8 12 12.8ZM12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10C8 8.93913 8.42143 7.92172 9.17157 7.17157C9.92172 6.42143 10.9391 6 12 6C13.0609 6 14.0783 6.42143 14.8284 7.17157C15.5786 7.92172 16 8.93913 16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14Z" fill="#454545" />
                     </svg>
-                    <span className="text-sm sm:text-base font-normal leading-[120%] text-[#454545] break-words">{jobData.job_type} - {jobData.job_location}</span>
+                    <span className="text-sm sm:text-base font-normal leading-[120%] text-[#454545] break-words">{jobData?.job_type} - {jobData?.job_location}</span>
                   </div>
                 </div>
               </div>
@@ -442,7 +442,7 @@ const handleSubmit = async (e) => {
 
             {/* Job post details */}
             <div className="w-full flex flex-wrap items-center gap-4 sm:gap-6 mt-1 text-sm sm:text-base font-normal text-[#4F4F4F]">
-              <span>{formatPostedDate(jobData.created_at)}</span>
+              <span>{formatPostedDate(jobData?.created_at)}</span>
               <span>Openings: 2</span>
               <span>Applicants: 120</span>
             </div>
@@ -450,10 +450,10 @@ const handleSubmit = async (e) => {
 
           {/* Job description section */}
           <div className="w-full flex flex-col gap-6 md:gap-8">
-            <h3 className="text-lg sm:text-xl md:text-[21px] font-semibold leading-[120%] text-black">💼 Join {jobData.company} as a {jobData.job_title}</h3>
+            <h3 className="text-lg sm:text-xl md:text-[21px] font-semibold leading-[120%] text-black">💼 Join {jobData?.company} as a {jobData?.job_title}</h3>
 
             <p className="text-sm sm:text-base font-normal leading-[140%] md:leading-[160%] text-black">
-              {jobData.description}
+              {jobData?.description}
             </p>
 
             <h3 className="text-lg sm:text-xl md:text-[21px] font-semibold leading-[120%] text-black mt-2 md:mt-4">🧩 Your Responsibilities</h3>
@@ -490,7 +490,7 @@ const handleSubmit = async (e) => {
               <h3 className="text-lg sm:text-xl md:text-[21px] font-semibold leading-[120%] text-black">🛠️ Key Skills Required</h3>
 
               <div className="flex items-center align-content-center gap-2 sm:gap-2.5 md:gap-3 flex-wrap w-full">
-                {(jobData.selected_skills && jobData.selected_skills.length > 0 ? jobData.selected_skills : ['No skills listed']).map((skill, index) => (
+                {(jobData?.selected_skills && jobData?.selected_skills.length > 0 ? jobData?.selected_skills : ['No skills listed']).map((skill, index) => (
                   <span
                     key={index}
                     className="flex justify-center items-center px-2 sm:px-2.5 md:px-3 py-1 md:py-1.5 rounded-2xl border border-gray-400 text-xs md:text-sm font-normal mb-1 overflow-hidden"
