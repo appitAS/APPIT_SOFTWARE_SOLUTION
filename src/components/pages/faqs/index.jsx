@@ -10,11 +10,13 @@ import {
 import Image from "next/image";
 import React from "react";
 
-const FAQs = ({ data, heading }) => {
+
+
+const FAQs = ({ data, heading, sectionClassName }) => {
   return (
-    <Section>
-      <Container shrink>
-        <div className="flex flex-col items-center justify-center text-center gap-8 sm:gap-12 lg:gap-20 w-full">
+    <Section className={sectionClassName}>
+      <Container className="bg-[#DFF0FF] sm:!px-10">
+        <div className="flex flex-col items-center justify-center text-center gap-8 sm:gap-12 lg:gap-10 w-full">
           {heading && (
             <HeadingPara
               title={heading.title}
@@ -37,7 +39,7 @@ const FAQs = ({ data, heading }) => {
                   <AccordionItem key={`item-${index}`} value={String(index)}>
                     <AccordionTrigger>{faq.question}</AccordionTrigger>
                     <AccordionContent>
-                      <ul className="list-disc ml-5 space-y-2">
+                      <ul className="list-disc ml-5 space-y-2 text-black">
                         {Array.isArray(faq.answer) ? (
                           faq.answer.map((point, i) => <li key={i}>{point}</li>)
                         ) : (

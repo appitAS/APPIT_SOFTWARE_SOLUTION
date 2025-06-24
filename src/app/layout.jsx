@@ -4,6 +4,7 @@ import '@/styles/animations.css'
 // import EmailJSInitializer from '@/components/email/EmailJSInitializer'
 import ChatbotWithPathCheck from '@/components/layout/ChatbotWithPathCheck'
 import ClientLayout from './clientLayout'
+import Footer from '@/components/home/Footer'
 
 const inter = Inter({ 
   subsets: ['latin'],

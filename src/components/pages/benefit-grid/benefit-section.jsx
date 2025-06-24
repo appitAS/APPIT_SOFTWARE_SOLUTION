@@ -19,7 +19,7 @@ const Benefits = ({ data = [], heading }) => {
                         />
                     )}
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6 w-full">
+                    <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 w-full ${data.length == 4 ? 'xl:grid-cols-2' : ' xl:grid-cols-3'}`}>
                         {data.map((item, index) => (
                             <BenefitCard
                                 key={index}
@@ -27,6 +27,8 @@ const Benefits = ({ data = [], heading }) => {
                                 title={item.title}
                                 para={item.para}
                                 specialLogoStyle={item.specialLogoStyle}
+                                paraClassName={"line-clamp-3"}
+                                className={item.className}
                             />
                         ))}
                     </div>

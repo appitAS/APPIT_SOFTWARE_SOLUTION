@@ -123,7 +123,7 @@ export default function Testimonials() {
       } transition-all duration-1000 ease-out delay-300`}>
         {/* Heading */}
         <h2 className="text-white text-center text-3xl md:text-4xl lg:text-[50px] font-semibold leading-[120%]">
-          Don't just take our words for it – <span className="text-[#EC1C26]">Take theirs!</span>
+          What <span className="text-[#EC1C26]">Client</span> Say Aboutt Us 
         </h2>
         
         {/* Subheading */}

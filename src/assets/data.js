@@ -656,6 +656,39 @@ export const KeyfeaturesData = [
   },
 ];
 
+export const ServiceNowfeaturesData = [
+    {
+        imageSrc: "/images/workflow.png",
+        title: "AI-Driven IT Workflows",
+        para: "Improve turnaround time with intelligent support automation",
+    },
+    {
+        imageSrc: "/images/agent.png",
+        title: "Virtual Agents & Chatbots",
+        para: "Enhance operational efficiency with intelligent AI-powered insights",
+    },
+    {
+        imageSrc: "/images/inteligence.png",
+        title: "Predictive Intelligence",
+        para: "Enable AI to understand and process human language for better communication.",
+    },
+    {
+        imageSrc: "/images/ticketing.png",
+        title: "Automated Ticketing & Resolution",
+        para: "Improve turnaround time with intelligent support automation",
+    },
+    {
+        imageSrc: "/images/machine.png",
+        title: "Machine Learning Models",
+        para: "Enhance operational efficiency with intelligent AI-powered insights",
+    },
+    {
+        imageSrc: "/images/nlp.png",
+        title: "Natural Language Processing (NLP)",
+        para: "Enable AI to understand and process human language for better communication.",
+    },
+];
+
 export const KeyfeaturesHelixAiPharma = [
   {
     imageSrc: "/images/helix-1.png",
