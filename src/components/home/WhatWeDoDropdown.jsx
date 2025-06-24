@@ -209,87 +209,75 @@ export default function WhatWeDoDropdown({
   // Products items with new content
   const productItems = [
     {
-      icon: 'first',
-      title: 'AskGenie AI',
-      subtitle: 'Intelligent Self-Serve Support',
-      href: '/platform/askgenie-ai'
+      icon: "first",
+      title: "AskGenie AI",
+      subtitle: "Intelligent Self-Serve Support",
+      href: "/platform",
     },
     {
-      icon: 'first',
-      title: 'SmartChat AI',
-      subtitle: 'Powered by Gen AI Agent Co-Pilot',
-      href: '/platform/smartchat-ai'
+      icon: "first",
+      title: "SmartChat AI",
+      subtitle: "Powered by Gen AI Agent Co-Pilot",
+      href: "#",
     },
     {
-      icon: 'second',
-      title: 'AI ChartWorks',
-      subtitle: 'AI-Powered Low-Code Builder',
-      href: '/platform/ai-chartworks'
+      icon: "second",
+      title: "AI ChartWorks",
+      subtitle: "AI-Powered Low-Code Builder",
+      href: "#",
     },
     {
-      icon: 'sale',
-      title: 'SalesBot AI',
-      subtitle: 'Conversational Buying Guidance',
-      href: '/platform/salesbot-ai'
+      icon: "sale",
+      title: "SalesBot AI",
+      subtitle: "Conversational Buying Guidance",
+      href: "#",
     },
     {
-      icon: 'gen1',
-      title: 'InsightsGen AI',
-      subtitle: 'Advanced User Behaviour Analytics',
-      href: '/platform/insightsgen-ai'
+      icon: "gen1",
+      title: "InsightsGen AI",
+      subtitle: "Advanced User Behaviour Analytics",
+      href: "#",
     },
     {
-      icon: 'whatsapp',
-      title: 'WhatsAppBot AI',
-      subtitle: 'Enhance Your Brand',
-      href: '/platform/whatsappbot-ai'
-    }
+      icon: "whatsapp",
+      title: "WhatsAppBot AI",
+      subtitle: "Enhance Your Brand",
+      href: "#",
+    },
   ];
 
   // Platform items with new content
   const platformItems = [
     {
-      icon: 'legal',
-      title: 'Legal AI Assistance',
-      subtitle: 'AI Legal Document Automation',
-      href: '/products/ai-lawyers'
+      icon: "legal",
+      title: "Legal AI Assistance",
+      subtitle: "AI Legal Document Automation",
+      href: "/products/ai-lawyers",
     },
     {
-      icon: 'talent',
-      title: 'AI-Driven Talent Acquisition',
-      subtitle: 'Smart AI Hiring Solutions',
-      href: '/products/ai-talent-acquisition'
+      icon: "talent",
+      title: "AI-Driven Talent Acquisition",
+      subtitle: "Smart AI Hiring Solutions",
+      href: "#",
     },
     {
-      icon: 'ats',
-      title: 'Track Nexus',
-      subtitle: 'AI-Powered Tracking',
-      href: '/products/track-nexus'
+      icon: "crm",
+      title: "All-in-One CRM",
+      subtitle: "Sales & Support Simplified",
+      href: "#",
     },
     {
-      icon: 'crm',
-      title: 'Helix AI Pharma',
-      subtitle: 'AI Solutions for Pharma Industry',
-      href: '/products/helix-ai-pharma'
+      icon: "ats",
+      title: "ATS (Application Tracking System)",
+      subtitle: "Optimize Talent Acquisition",
+      href: "#",
     },
     {
-      icon: 'ats',
-      title: 'ATS (Application Tracking System)',
-      subtitle: 'Optimize Talent Acquisition',
-      href: '/products/ats'
+      icon: "outlook",
+      title: "Outlook AI Copilot",
+      subtitle: "Assist. Organize. Respond",
+      href: "#",
     },
-    {
-      icon: 'crm',
-      title: 'All-in-One CRM',
-      subtitle: 'Sales & Support Simplified',
-      href: '/products/all-in-one-crm'
-    },
-    {
-      icon: 'outlook',
-      title: 'Outlook AI Copilot',
-      subtitle: 'Assist. Organize. Respond',
-      href: '/products/outlook-ai-copilot'
-    }
   ];
 
   // Get the active items based on selected tab
@@ -297,7 +285,9 @@ export default function WhatWeDoDropdown({
     switch (activeTab) {
       case "Services":
         return serviceItems;
-      case 'Products':
+      /* case 'Industries':
+        return industryItems; */
+      case "Products":
         return platformItems;
       case "Platform":
         return productItems;
@@ -307,7 +297,7 @@ export default function WhatWeDoDropdown({
   };
 
   // Sidebar tabs
-  const sidebarTabs = ['Services', 'Products', 'Platform'];
+  const sidebarTabs = ["Services", /* 'Industries', */ "Products", "Platform"];
 
   if (!isOpen && animationState === "closed") {
     return null;
@@ -343,34 +333,58 @@ export default function WhatWeDoDropdown({
             ))}
           </div>
           <div className="p-4 grid grid-cols-1 gap-4">
-            {activeItems.map((item, index) => (
-              <Link 
-                key={index}
-                href={item.href}
-                prefetch={true}
-                onClick={(e) => handleItemClick(e)}
-                className="flex items-center gap-3 p-2 rounded transition-all duration-300 group hover:bg-[#F0F8FF]"
-                style={{
-                  transitionDelay: `${index * 30}ms`,
-                  opacity: animationState === 'opening' || animationState === 'open' ? 1 : 0,
-                  transform: animationState === 'opening' || animationState === 'open' ? 'translateX(0)' : 'translateX(-5px)'
-                }}
-              >
-                <div className="w-10 h-10 flex-shrink-0 rounded-full flex items-center justify-center">
-                  <Image 
-                    src={`/images/dropdown/${item.icon}.svg`}
-                    alt={item.title}
-                    width={48}
-                    height={48}
-                    className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
-                  />
-                </div>
-                <div>
-                  <h4 className="text-sm font-semibold group-hover:text-[#0066B3] transition-colors duration-300">{item.title}</h4>
-                  <p className="text-xs text-gray-600 group-hover:text-[#0066B3] transition-colors duration-300">{item.subtitle}</p>
-                </div>
-              </Link>
-            ))}
+            {activeItems.map((item, index) => {
+              const ItemComponent = item.href ? Link : "div";
+              const itemProps = item.href
+                ? { href: item.href, prefetch: true }
+                : {};
+
+              return (
+                <ItemComponent
+                  key={index}
+                  {...itemProps}
+                  onClick={(e) => {
+                    if (onClose) {
+                      onClose();
+                      if (typeof window !== "undefined") {
+                        sessionStorage.setItem("isWhatWeDoOpen", "false");
+                      }
+                    }
+                    handleItemClick(e);
+                  }}
+                  className="flex items-center gap-3 p-2 rounded transition-all duration-300 group hover:bg-[#F0F8FF]"
+                  style={{
+                    transitionDelay: `${index * 30}ms`,
+                    opacity:
+                      animationState === "opening" || animationState === "open"
+                        ? 1
+                        : 0,
+                    transform:
+                      animationState === "opening" || animationState === "open"
+                        ? "translateX(0)"
+                        : "translateX(-5px)",
+                  }}
+                >
+                  <div className="w-10 h-10 flex-shrink-0 rounded-full flex items-center justify-center">
+                    <Image
+                      src={`/images/dropdown/${item.icon}.svg`}
+                      alt={item.title}
+                      width={48}
+                      height={48}
+                      className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-semibold group-hover:text-[#0066B3] transition-colors duration-300">
+                      {item.title}
+                    </h4>
+                    <p className="text-xs text-gray-600 group-hover:text-[#0066B3] transition-colors duration-300">
+                      {item.subtitle}
+                    </p>
+                  </div>
+                </ItemComponent>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -380,9 +394,9 @@ export default function WhatWeDoDropdown({
   const activeItems = getActiveItems();
 
   return (
-    <div 
-      className={`fixed inset-0 top-[96px] z-40 w-full overflow-hidden transition-all duration-200 ease-out ${getAnimationClasses()}`} 
-      style={{ background: 'transparent' }}
+    <div
+      className={`fixed inset-0 top-[96px] z-40 w-full overflow-hidden transition-all duration-200 ease-out ${getAnimationClasses()}`}
+      style={{ background: "transparent" }}
     >
       {/* Main Dropdown Container */}
       <div className="w-full mx-auto py-2.5 flex-col justify-center items-center">
@@ -433,34 +447,80 @@ export default function WhatWeDoDropdown({
                 columnGap: "24px",
               }}
             >
-              {activeItems.map((item, index) => (
-                <Link 
-                  key={index}
-                  href={item.href}
-                  prefetch={true}
-                  className="flex items-center gap-4 p-2 cursor-pointer transition-all duration-300 hover:translate-x-1 rounded group hover:bg-[#F0F8FF]" 
-                  style={{ 
-                    transitionDelay: `${(index % 3) * 50 + Math.floor(index / 3) * 30}ms`,
-                    opacity: animationState === 'opening' || animationState === 'open' ? 1 : 0,
-                    transform: animationState === 'opening' || animationState === 'open' ? 'translateX(0)' : 'translateX(-5px)'
-                  }}
-                  onClick={(e) => handleItemClick(e)}
-                >
-                  <div className="w-[48px] h-[48px] flex-shrink-0 aspect-square rounded-full flex items-center justify-center overflow-hidden">
-                    <Image 
-                      src={`/images/dropdown/${item.icon}.svg`}
-                      alt={item.title}
-                      width={48}
-                      height={48}
-                      className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
-                    />
-                  </div>
-                  <div className="flex flex-col">
-                    <h3 className="self-stretch text-black font-['Jost'] text-[16px] font-semibold leading-[120%] group-hover:text-[#0066B3] transition-colors duration-300">{item.title}</h3>
-                    <p className="self-stretch text-black font-['Jost'] text-[12px] italic font-normal leading-[120%] group-hover:text-[#0066B3] transition-colors duration-300">{item.subtitle}</p>
-                  </div>
-                </Link>
-              ))}
+              {activeItems.map((item, index) => {
+                 const ItemComponent = item.href ? Link : "div";
+              const itemProps = item.href
+                ? { href: item.href, prefetch: true }
+                : {};
+
+                return (
+                  <ItemComponent
+                    key={index}
+                    {...itemProps}
+                    className="flex items-center gap-4 p-2 cursor-pointer transition-all duration-300 hover:translate-x-1 rounded group hover:bg-[#F0F8FF]"
+                    style={{
+                      transitionDelay: `${
+                        (index % 3) * 50 + Math.floor(index / 3) * 30
+                      }ms`,
+                      opacity:
+                        animationState === "opening" ||
+                        animationState === "open"
+                          ? 1
+                          : 0,
+                      transform:
+                        animationState === "opening" ||
+                        animationState === "open"
+                          ? "translateX(0)"
+                          : "translateX(-5px)",
+                    }}
+                    onClick={(e) => {
+                      // For navigation links, make sure to close the dropdown
+                      if (onClose) {
+                        onClose();
+                        // Reset the dropdown state in sessionStorage
+                        if (typeof window !== "undefined") {
+                          sessionStorage.setItem("isWhatWeDoOpen", "false");
+                        }
+                      }
+
+                      // For non-navigation items, use the regular handleItemClick
+                      if (
+                        !(
+                          activeTab === "Platform" &&
+                          item.title === "AskGenie AI"
+                        ) &&
+                        !(
+                          activeTab === "Services" && item.title === "Oracle AI"
+                        ) &&
+                        !(
+                          activeTab === "Products" &&
+                          item.title === "Legal AI Assistance"
+                        )
+                      ) {
+                        handleItemClick(e);
+                      }
+                    }}
+                  >
+                    <div className="w-[48px] h-[48px] flex-shrink-0 aspect-square rounded-full flex items-center justify-center overflow-hidden">
+                      <Image
+                        src={`/images/dropdown/${item.icon}.svg`}
+                        alt={item.title}
+                        width={48}
+                        height={48}
+                        className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                      />
+                    </div>
+                    <div className="flex flex-col">
+                      <h3 className="self-stretch text-black font-['Jost'] text-[16px] font-semibold leading-[120%] group-hover:text-[#0066B3] transition-colors duration-300">
+                        {item.title}
+                      </h3>
+                      <p className="self-stretch text-black font-['Jost'] text-[12px] italic font-normal leading-[120%] group-hover:text-[#0066B3] transition-colors duration-300">
+                        {item.subtitle}
+                      </p>
+                    </div>
+                  </ItemComponent>
+                );
+              })}
             </div>
           </div>
         </div>
