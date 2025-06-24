@@ -43,7 +43,7 @@ const ImageWithText = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 gap-6 sm:gap-8 items-stretch",
+        "grid grid-cols-1 gap-6 sm:gap-8 items-stretch max-w-6xl mx-auto", // Center + max width
         finalGridClass,
         containerClassName
       )}
@@ -83,7 +83,7 @@ const ImageWithText = ({
       <div
         className={cn(
           "flex flex-col justify-center h-full",
-          reverse = "items-start",
+          reverse ? "ml-6 items-start" : "mr-6",
           contentClassName
         )}
       >
@@ -100,23 +100,6 @@ const ImageWithText = ({
           paraHighlightTextStyle={paraHighlightTextStyle}
           lineByLine={lineByLine}
         />
-        {title && (
-          <h3 className="text-xl sm:text-2xl font-bold mb-2">{title}</h3>
-        )}
-
-        {/* Render title */}
-        {title && (
-          <h3 className="text-xl sm:text-2xl font-bold mb-3 text-[#252525]">
-            {title}
-          </h3>
-        )}
-
-        {/* Render main paragraph */}
-        {para && (
-          <p className="text-base sm:text-lg mb-3 text-[#252525] whitespace-pre-line">
-            {para}
-          </p>
-        )}
 
         {/* Render bullet points */}
         {bulletPoints && bulletPoints.length > 0 && (

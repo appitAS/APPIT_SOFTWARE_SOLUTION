@@ -258,25 +258,37 @@ export default function WhatWeDoDropdown({
       icon: "talent",
       title: "AI-Driven Talent Acquisition",
       subtitle: "Smart AI Hiring Solutions",
-      href: "#",
+      href: "/products/ai-talent-acquisition",
     },
     {
       icon: "crm",
       title: "All-in-One CRM",
       subtitle: "Sales & Support Simplified",
-      href: "#",
+      href: "/products/all-in-one-crm",
     },
     {
       icon: "ats",
       title: "ATS (Application Tracking System)",
       subtitle: "Optimize Talent Acquisition",
-      href: "#",
+      href: "/products/ats",
     },
     {
       icon: "outlook",
       title: "Outlook AI Copilot",
       subtitle: "Assist. Organize. Respond",
-      href: "#",
+      href: "/products/outlook-ai-copilot",
+    },
+     {
+      icon: "ats",
+      title: "Track Nexus",
+      subtitle: "User-friendly Time TrackNexus",
+      href: "/products/track-nexus",
+    },
+    {
+      icon: "legal",
+      title: "Helix AI Pharma",
+      subtitle: "Revolutionizing Pharma Innovation with AI",
+      href: "/products/helix-ai-pharma",
     },
   ];
 
