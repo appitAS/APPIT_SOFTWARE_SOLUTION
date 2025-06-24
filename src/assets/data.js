@@ -179,6 +179,58 @@ export const WorkisyForAIDrivenTalent = [
     title: "Real-Time Analytics & Insights",
   },
 ];
+export const FeaturesOfOutlookAICopilot = [
+  {
+    iconSrc: "/images/outlook-ai-copilot/feature1.svg",
+    title: "Smart Email Summarization",
+  },
+  {
+    iconSrc: "/images/outlook-ai-copilot/feature2.svg",
+    title: "Contextual Reply Suggestions",
+  },
+  {
+    iconSrc: "/images/outlook-ai-copilot/feature3.svg",
+    title: "Al-Powered Email Composer",
+  },
+  {
+    iconSrc: "/images/outlook-ai-copilot/feature4.svg",
+    title: "Calendar-Aware Email Drafting",
+  },
+  {
+    iconSrc: "/images/outlook-ai-copilot/feature5.svg",
+    title: "Outlook Plugin",
+  },
+  {
+    iconSrc: "/images/outlook-ai-copilot/feature6.svg",
+    title: "Tone and Style Adjustment",
+  },
+];
+export const FeaturesOfATS = [
+  {
+    iconSrc: "/images/ats/ats-feature1.svg",
+    title: "Job Requisition & Posting Management",
+  },
+  {
+    iconSrc: "/images/ats/ats-feature2.svg",
+    title: "Customizable Recruitment Pipeline",
+  },
+  {
+    iconSrc: "/images/ats/ats-feature3.svg",
+    title: "Interview Management",
+  },
+  {
+    iconSrc: "/images/ats/ats-feature4.svg",
+    title: "Resume Parsing & Candidate Sourcing",
+  },
+  {
+    iconSrc: "/images/ats/ats-feature5.svg",
+    title: "Al-Based Resume Screening",
+  },
+  {
+    iconSrc: "/images/ats/ats-feature6.svg",
+    title: "Offer Management",
+  },
+];
 export const whyChooseData = [
   {
     image: "/images/why-choose-1.jpg",
@@ -366,6 +418,130 @@ export const faqHelixAiPharma = [
   },
   {
     question: "How do I get started with HelixAl Pharma Product Platform?",
+    answer: [
+      "Getting started with AI Lawyer is quick and easy. Simply sign up using your Google, Apple, or email account—no technical setup required.",
+      "All new users receive a free trial, giving you full access to our platform's features and benefits with zero upfront cost.",
+      "Explore how AI Lawyer can simplify legal work and enhance your productivity from day one.",
+    ],
+  },
+];
+export const faqAllInOneCRM = [
+  {
+    question: "What is AppitSoftware's All-In-One CRM Solution?",
+    answer: [
+      "AI Lawyer is a cutting-edge platform revolutionizing the legal industry through the power of artificial intelligence. It automates legal research, simplifies complex terminology, and streamlines document management with exceptional efficiency.",
+      "Whether you're an individual seeking affordable legal guidance, a professional aiming to optimize workflows, or a student navigating legal studies, AI Lawyer delivers tailored solutions for your needs.",
+      "With features like personalized customization, multi-platform accessibility, and a strong commitment to data privacy, AI Lawyer stands out as a smart, secure, and indispensable tool in the modern LegalTech landscape.",
+    ],
+  },
+  {
+    question: "What do your All-In-One CRM Product Services include?",
+    answer: [
+      "AI Lawyer is designed to serve a wide range of users, with the goal of making legal support smarter, faster, and more accessible.",
+      "Consumers: Get easy-to-understand explanations of legal terms and guided support with document handling—no legal background required.",
+      "Lawyers: Automate time-consuming tasks like research and paperwork, so you can focus on strategy, advocacy, and client relationships.",
+      "Law Students: Use AI Lawyer as a powerful learning companion—perfect for legal research, writing assistance, and preparing case briefs.",
+      "Law Firms: Boost operational efficiency by automating research and document processes, improving service delivery and optimizing resource allocation.",
+    ],
+  },
+  {
+    question: "How does your All-In-One CRM Software Services improve business efficiency?",
+    answer: [
+      "AI Lawyer is designed to work globally and supports a wide range of languages.",
+      "You can ask legal questions in your native language and receive accurate responses in the same language.",
+      "This multilingual capability ensures that users from different regions can access legal assistance that feels natural, clear, and easy to understand—making legal support truly accessible across borders.",
+    ],
+  },
+  {
+    question: "Can your All-In-One CRM Tools Services be customized for specific industries?",
+    answer: [
+      "Getting started with AI Lawyer is quick and easy. Simply sign up using your Google, Apple, or email account—no technical setup required.",
+      "All new users receive a free trial, giving you full access to our platform's features and benefits with zero upfront cost.",
+      "Explore how AI Lawyer can simplify legal work and enhance your productivity from day one.",
+    ],
+  },
+  {
+    question: "Is AppitSoftware's CRM solution scalable for growing businesses?",
+    answer: [
+      "Getting started with AI Lawyer is quick and easy. Simply sign up using your Google, Apple, or email account—no technical setup required.",
+      "All new users receive a free trial, giving you full access to our platform's features and benefits with zero upfront cost.",
+      "Explore how AI Lawyer can simplify legal work and enhance your productivity from day one.",
+    ],
+  },
+];
+export const faqOutlookAICopilot = [
+  {
+    question: "What are Outlook Al Copilot Product Services offered by AppitSoftware?",
+    answer: [
+      "AI Lawyer is a cutting-edge platform revolutionizing the legal industry through the power of artificial intelligence. It automates legal research, simplifies complex terminology, and streamlines document management with exceptional efficiency.",
+      "Whether you're an individual seeking affordable legal guidance, a professional aiming to optimize workflows, or a student navigating legal studies, AI Lawyer delivers tailored solutions for your needs.",
+      "With features like personalized customization, multi-platform accessibility, and a strong commitment to data privacy, AI Lawyer stands out as a smart, secure, and indispensable tool in the modern LegalTech landscape.",
+    ],
+  },
+  {
+    question: "How can Outlook Al Copilot Software Services benefit my business communication?",
+    answer: [
+      "AI Lawyer is designed to serve a wide range of users, with the goal of making legal support smarter, faster, and more accessible.",
+      "Consumers: Get easy-to-understand explanations of legal terms and guided support with document handling—no legal background required.",
+      "Lawyers: Automate time-consuming tasks like research and paperwork, so you can focus on strategy, advocacy, and client relationships.",
+      "Law Students: Use AI Lawyer as a powerful learning companion—perfect for legal research, writing assistance, and preparing case briefs.",
+      "Law Firms: Boost operational efficiency by automating research and document processes, improving service delivery and optimizing resource allocation.",
+    ],
+  },
+  {
+    question: "What is Outlook 365 Al Write Email Software and how does it work?",
+    answer: [
+      "AI Lawyer is designed to work globally and supports a wide range of languages.",
+      "You can ask legal questions in your native language and receive accurate responses in the same language.",
+      "This multilingual capability ensures that users from different regions can access legal assistance that feels natural, clear, and easy to understand—making legal support truly accessible across borders.",
+    ],
+  },
+  {
+    question: "Can AppitSoftware customize Outlook Al tools for specific business needs?",
+    answer: [
+      "Getting started with AI Lawyer is quick and easy. Simply sign up using your Google, Apple, or email account—no technical setup required.",
+      "All new users receive a free trial, giving you full access to our platform's features and benefits with zero upfront cost.",
+      "Explore how AI Lawyer can simplify legal work and enhance your productivity from day one.",
+    ],
+  },
+  {
+    question: "Is the Outlook Al Copilot secure for enterprise communication?",
+    answer: [
+      "Getting started with AI Lawyer is quick and easy. Simply sign up using your Google, Apple, or email account—no technical setup required.",
+      "All new users receive a free trial, giving you full access to our platform's features and benefits with zero upfront cost.",
+      "Explore how AI Lawyer can simplify legal work and enhance your productivity from day one.",
+    ],
+  },
+];
+export const faqATS = [
+  {
+    question: "What is an ATS (Applicant Tracking System)?",
+    answer: [
+      "AI Lawyer is a cutting-edge platform revolutionizing the legal industry through the power of artificial intelligence. It automates legal research, simplifies complex terminology, and streamlines document management with exceptional efficiency.",
+      "Whether you're an individual seeking affordable legal guidance, a professional aiming to optimize workflows, or a student navigating legal studies, AI Lawyer delivers tailored solutions for your needs.",
+      "With features like personalized customization, multi-platform accessibility, and a strong commitment to data privacy, AI Lawyer stands out as a smart, secure, and indispensable tool in the modern LegalTech landscape.",
+    ],
+  },
+  {
+    question: "Who can use this ATS?",
+    answer: [
+      "AI Lawyer is designed to serve a wide range of users, with the goal of making legal support smarter, faster, and more accessible.",
+      "Consumers: Get easy-to-understand explanations of legal terms and guided support with document handling—no legal background required.",
+      "Lawyers: Automate time-consuming tasks like research and paperwork, so you can focus on strategy, advocacy, and client relationships.",
+      "Law Students: Use AI Lawyer as a powerful learning companion—perfect for legal research, writing assistance, and preparing case briefs.",
+      "Law Firms: Boost operational efficiency by automating research and document processes, improving service delivery and optimizing resource allocation.",
+    ],
+  },
+  {
+    question: "Is resume parsing included?",
+    answer: [
+      "AI Lawyer is designed to work globally and supports a wide range of languages.",
+      "You can ask legal questions in your native language and receive accurate responses in the same language.",
+      "This multilingual capability ensures that users from different regions can access legal assistance that feels natural, clear, and easy to understand—making legal support truly accessible across borders.",
+    ],
+  },
+  {
+    question: "Does your ATS support job board integrations?",
     answer: [
       "Getting started with AI Lawyer is quick and easy. Simply sign up using your Google, Apple, or email account—no technical setup required.",
       "All new users receive a free trial, giving you full access to our platform's features and benefits with zero upfront cost.",

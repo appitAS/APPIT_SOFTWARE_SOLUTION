@@ -9,7 +9,10 @@ export default function HideDefaultHeader() {
     '/products/ai-lawyers',
     '/products/ai-talent-acquisition',
     '/products/helix-ai-pharma',
-    '/products/track-nexus',    
+    '/products/track-nexus',   
+    '/products/all-in-one-crm', 
+    '/products/ats',
+    '/products/outlook-ai-copilot',
     '/services/oracle-ai' // Add Oracle AI page path here
   ];
   const shouldHideDefaultHeader = transparentHeaderPages.includes(pathname);
