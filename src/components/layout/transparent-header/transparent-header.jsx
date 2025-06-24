@@ -8,7 +8,7 @@ import WhoWeAreDropdown from "@/components/home/WhoWeAreDropdown";
 
 export default function TransparentHeader() {
   const pathname = usePathname();
-  const isOracleAIPage = pathname === "/services/oracle-ai";
+  const isOracleAIPage = pathname === "/services";
   const isHelixAiPage = pathname === "/products/helix-ai-pharma";
   const isTrackNexus = pathname === "/products/track-nexus";
   const isAllInOneCrmPage = pathname === "/products/all-in-one-crm";
@@ -16,10 +16,12 @@ export default function TransparentHeader() {
   const isOutlookAICopilot = pathname === "/products/outlook-ai-copilot";
   // Track the pathname to detect route changes
   const prevPathRef = useRef(pathname);
+
   const textColor =
     isOracleAIPage || isHelixAiPage || isTrackNexus || isAllInOneCrmPage || isATS || isOutlookAICopilot
       ? "text-white"
       : "text-[#000]";
+
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isWhatWeDoOpen, setIsWhatWeDoOpen] = useState(false);
