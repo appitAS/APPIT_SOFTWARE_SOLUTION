@@ -20,6 +20,10 @@ export default function HideDefaultHeader() {
     '/services/big-commerce', // Add ODC and Managed Services page path here
     '/services/shopify', // Add ODC Services page path here
 
+    '/products/ai-talent-acquisition',
+    '/products/helix-ai-pharma',
+    '/products/track-nexus',    
+    '/services/oracle-ai' // Add Oracle AI page path here
   ];
   const shouldHideDefaultHeader = transparentHeaderPages.includes(pathname);
 
