@@ -18,7 +18,6 @@ import WhyChoose from "../../../components/pages/why-choose/why-choose";
 import AboveFooterSection from "../../../components/home/AboveFooter";
 import Footer from "../../../components/home/Footer";
 import React from "react";
-import { reverse } from "dns";
 
 const sectionsData = [
   {
