@@ -6,7 +6,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useResponsiveScreen } from "../../../hooks/use-mobile";
 
-const BenefitCard = ({ title, iconSrc, para, className, specialLogoStyle = false }) => {
+const BenefitCard = ({ title, iconSrc, para, className, paraClassName, specialLogoStyle = false }) => {
   const { isMobile } = useResponsiveScreen();
 
   return (
@@ -15,13 +15,14 @@ const BenefitCard = ({ title, iconSrc, para, className, specialLogoStyle = false
       initial="rest"
       animate="rest"
       className={cn(
-        "relative h-full sm:h-56 lg:h-[210px] w-full bg-card-black rounded-4xl shadow-xl p-5 text-white overflow-hidden transition-all duration-300 group flex flex-col items-start justify-center gap-5",
+        "relative h-full sm:h-56 lg:h-[177px] lg:w-[382px] w-full bg-card-black rounded-4xl shadow-xl p-5 text-white overflow-hidden transition-all duration-300 group flex flex-col items-start justify-center gap-5",
         className
       )}
     >
       {/* Icon + Title */}
       {isMobile ? (
         <div className="flex items-center gap-5">
+          {iconSrc && (
           <div className={specialLogoStyle ? 
             "flex items-center justify-center w-[40px] h-[40px] p-[10px] aspect-square rounded-[50px] bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)_inset]" :
             ""}
@@ -34,6 +35,7 @@ const BenefitCard = ({ title, iconSrc, para, className, specialLogoStyle = false
               className={specialLogoStyle ? "w-full h-full" : "w-12 h-12"}
             />
           </div>
+          )}
           <h3 className="text-lg sm:text-xl font-semibold text-start">
             {title}
           </h3>
@@ -47,6 +49,7 @@ const BenefitCard = ({ title, iconSrc, para, className, specialLogoStyle = false
           transition={{ duration: 0.4 }}
           className="flex items-center gap-5 h-full"
         >
+          {iconSrc && (
           <div className={specialLogoStyle ? 
             "flex items-center justify-center w-[40px] h-[40px] p-[10px] aspect-square rounded-[50px] bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)_inset]" :
             ""}
@@ -59,6 +62,8 @@ const BenefitCard = ({ title, iconSrc, para, className, specialLogoStyle = false
               className={specialLogoStyle ? "w-full h-full" : "w-12 h-12"}
             />
           </div>
+
+          )}
           <h3 className="text-base sm:text-xl font-semibold text-start">
             {title}
           </h3>
@@ -75,7 +80,7 @@ const BenefitCard = ({ title, iconSrc, para, className, specialLogoStyle = false
             hover: { opacity: 1 },
           }}
           transition={{ duration: 0.4 }}
-          className="sm:absolute bottom-5 left-5 right-5 text-xs sm:text-sm md:text-base text-start pointer-events-none max-h-[120px] overflow-y-auto"
+          className={cn(`sm:absolute bottom-5 left-5 right-5 text-xs sm:text-sm md:text-base text-start pointer-events-none max-h-[120px] overflow-y-auto`,paraClassName)}
         >
           {para}
         </motion.p>

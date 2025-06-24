@@ -11,14 +11,22 @@ const KeyFeatures = ({
   cards = 3,
   height = false,
   simpleBG = false,
+  customStyle = "",
+  className,
+  classNameHeading,
+  imageClassName = "",
+  imgContainerClassName = "",
+  classNamePara = ''
 }) => {
   const defaultStyling =
     cards === 4
-      ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6"
-      : "grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6";
+      ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 lg:gap-5"
+      : cards === 8
+      ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-5"
+      : "grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-5 place-items-center justify-items-center";
 
   return (
-    <Section>
+    <Section className={className}>
       <Container>
         <div className="flex flex-col items-center justify-center text-center gap-8 sm:gap-12 lg:gap-20">
           {heading && (
@@ -26,12 +34,13 @@ const KeyFeatures = ({
               title={heading.title}
               para={heading.para}
               highlightText={heading.highlightText}
-              classNamePara="font-semibold"
+              classNamePara={classNamePara}
               sectionHeading
+              classNameHeading={classNameHeading}
             />
           )}
 
-          <div className={cn(`grid w-full h-full`, defaultStyling)}>
+          <div className={cn(`grid w-full h-full`, defaultStyling, customStyle,)}>
             {data.map((item, index) => (
               <KeyFeaturedCard
                 key={index}
@@ -40,6 +49,9 @@ const KeyFeatures = ({
                 para={item.para}
                 height={height}
                 simpleBG={simpleBG}
+                imageClassName={imageClassName}
+                imgContainerClassName={imgContainerClassName}
+                className={item?.className}
               />
             ))}
           </div>

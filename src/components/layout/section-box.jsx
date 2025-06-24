@@ -40,7 +40,7 @@ const Section = ({
           style={{ 
             backgroundImage: `url(${imageSrc})`,
             backgroundPosition: '-10.634px -249.33px',
-            backgroundSize: '102.752% 136.263%'
+            backgroundSize: '102.752% 140.263%'
           }}
         />
       )}

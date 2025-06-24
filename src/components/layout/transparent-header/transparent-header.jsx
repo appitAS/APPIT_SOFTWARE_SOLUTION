@@ -8,7 +8,9 @@ import WhoWeAreDropdown from '@/components/home/WhoWeAreDropdown';
 
 export default function TransparentHeader() {
   const pathname = usePathname();
-  const isOracleAIPage = pathname === '/services/oracle-ai';
+  const isOracleAIPage = pathname.includes('/services');
+  
+  // const isOracleAIPage = pathname === '/services/oracle-ai';
   const isHelixAiPage = pathname === '/products/helix-ai-pharma';
   const isTrackNexus = pathname === '/products/track-nexus';
 

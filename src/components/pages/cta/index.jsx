@@ -8,7 +8,7 @@ const CTA = () => {
     return (
         <Section>
             <Container className='py-8 md:py-8 3xl:py-16'>
-                <div className='flex flex-col items-center justify-center text-center gap-8 xl:gap-16'>
+                <div className='flex flex-col items-center justify-center text-center gap-8 xl:gap-14'>
                     <HeadingPara title='Start Your Digital Transformation'
                         highlightText='Digital Transformation'
                         sectionHeading
