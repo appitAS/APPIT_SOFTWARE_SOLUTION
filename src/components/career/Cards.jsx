@@ -163,7 +163,7 @@ const Cards = () => {
             >
               <div className="w-full flex flex-row justify-between items-start gap-4">
                 <div className="flex flex-col items-start gap-2 sm:gap-2.5">
-                  <h3 className="text-lg sm:text-xl md:text-[21px] font-semibold leading-[120%] font-['Jost'] text-black">{job.job_title}</h3>
+                  <h3 className="text-lg sm:text-xl md:text-[21px] font-semibold leading-[120%] font-['Jost'] text-black">{job.title}</h3>
                   <p className="text-base sm:text-[16px] font-semibold leading-[120%] font-['Jost'] text-[#252525]">{job.company}</p>
 
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6">
