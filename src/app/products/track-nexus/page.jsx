@@ -14,7 +14,7 @@ import TrackNexusHero from "../../../components/pages/products/track-nexus/track
 import TransparentHeader from "../../../components/layout/transparent-header/transparent-header";
 import HideDefaultHeader from "../../../components/layout/transparent-header/hide-default-header";
 import WhyChoose from "../../../components/pages/why-choose/why-choose";
-import AboveFooterSection from "../../../components/home/AboveFooterSection";
+import AboveFooterSection from "../../../components/home/AboveFooter";
 import Footer from "../../../components/home/Footer";
 import React from "react";
 
