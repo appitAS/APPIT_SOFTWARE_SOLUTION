@@ -8,7 +8,7 @@ import WhoWeAreDropdown from "@/components/home/WhoWeAreDropdown";
 
 export default function TransparentHeader() {
   const pathname = usePathname();
-   const isServices = pathname.includes('/services');
+   const isOracleAIPage = pathname.includes('/services');
 
   const isHelixAiPage = pathname === "/products/helix-ai-pharma";
   const isTrackNexus = pathname === "/products/track-nexus";
@@ -19,7 +19,7 @@ export default function TransparentHeader() {
   const prevPathRef = useRef(pathname);
 
   const textColor =
-    isServices || isHelixAiPage || isTrackNexus || isAllInOneCrmPage || isATS || isOutlookAICopilot
+    isOracleAIPage || isHelixAiPage || isTrackNexus || isAllInOneCrmPage || isATS || isOutlookAICopilot
       ? "text-white"
       : "text-[#000]";
 
