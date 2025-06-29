@@ -1,5 +1,3 @@
-'use client';
-import { useEffect } from 'react';
 import Header from '@/components/home/Header';
 import PartnershipHero from '@/components/partnership/PartnershipHero';
 import PartnershipServices from '@/components/partnership/PartnershipServices';
@@ -8,7 +6,7 @@ import PartnershipBenefits from '@/components/partnership/PartnershipBenefits';
 import ChatWithAI from '@/components/platform/ChatWithAI';
 import AboveFooterSection from '@/components/home/AboveFooterSection';
 import Footer from '@/components/home/Footer';
-import useSmoothScroll from '@/hooks/useSmoothScroll';
+// import useSmoothScroll from '@/hooks/useSmoothScroll';
 import Script from 'next/script';
 
 export const metadata = {
@@ -27,7 +25,7 @@ export const metadata = {
 
 export default function Partnership() {
   // Initialize smooth scrolling behavior
-  useSmoothScroll();
+  // useSmoothScroll();
   
   return (
     <>

@@ -149,7 +149,7 @@ const Page = () => {
       <TransparentHeader showBorder={true} />
       <div className="mt-[80px]">
         <HelixAIPharmaHero />
-        {sectionsData.map((section, index) => (
+        {sectionsData?.map((section, index) => (
           <ImageWithTextSection
             key={index}
             section={{
