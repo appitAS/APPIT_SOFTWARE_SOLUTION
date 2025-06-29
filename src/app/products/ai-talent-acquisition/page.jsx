@@ -1,12 +1,11 @@
 import {
   WorkisyForAIDrivenTalent,
-  faqAITalentAcquisitionData,
   whyChooseAILawyerData,
 } from "../../../assets/data";
 import ImageWithTextSection from "../../../components/layout/image-text-section";
 import Benefits from "../../../components/pages/benefit-grid/benefit-section";
 import CTA from "../../../components/pages/cta";
-import FAQs from "../../../components/pages/faqs";
+import AITalentAcquisitionFAQ from "../../../components/products/ai-talent-acquisition/AITalentAcquisitionFAQ";
 import AITalentAcquisition from "../../../components/pages/products/ai-talent-acquisition/ai-talent-acquisition-hero";
 import ContactUs from "../../../components/pages/products/ai-talent-acquisition/contact-us";
 import TransparentHeader from "../../../components/layout/transparent-header/transparent-header";
@@ -16,6 +15,22 @@ import WhyChoose from "../../../components/pages/why-choose/why-choose";
 import AboveFooterSection from "../../../components/home/AboveFooter";
 import Footer from "../../../components/home/Footer";
 import React from "react";
+import Script from "next/script";
+
+export const metadata = {
+  title: 'AI-Driven Talent Acquisition | Appit Software Recruitment Solutions',
+  description: 'Appit Software\'s AI-driven talent acquisition solutions. With intelligent automation, you can discover top talent faster, reduce hiring time, and make smarter recruitment decisions.',
+  keywords: [
+    'AI-Driven Talent Acquisition',
+    'AI Recruitment Software Services',
+    'AI Hiring Software Services',
+    'AI Recruitment Management System Services',
+    'AI-Driven Talent Acquisition Product Services',
+    'automated hiring process',
+    'intelligent candidate screening',
+    'recruitment AI'
+  ]
+};
 
 const sectionsData = [
   {
@@ -59,9 +74,65 @@ const sectionsData3 = [
   },
 ];
 
-const page = () => {
-  return (
+const page = () => {  return (
     <>
+      <Script
+        type="application/ld+json"
+        className="schemantra"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "WebPage",
+            "acquireLicensePage": "https://www.appitsoftware.com/ai-driven-talent-acquisition"
+          })
+        }}
+      />
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What are AI-Driven Talent Acquisition Product Services from AppitSoftware?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AppitSoftware's AI-Driven Talent Acquisition Product Services use artificial intelligence to automate and enhance the hiring process, from candidate sourcing to onboarding, delivering faster and smarter recruitment results."
+              }
+            },{
+              "@type": "Question",
+              "name": "How do your AI Recruitment Software Services help HR teams?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our AI Recruitment Software Services streamline the hiring workflow by screening resumes, ranking candidates, and scheduling interviews—saving HR teams time while improving candidate quality and experience."
+              }
+            },{
+              "@type": "Question",
+              "name": "What features are included in your AI Hiring Software Services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AppitSoftware's AI Hiring Software includes automated job matching, resume parsing, chatbot-driven applicant interaction, predictive analytics, and seamless integration with popular HR systems and job portals."
+              }
+            },{
+              "@type": "Question",
+              "name": "Can your AI Recruitment Management System Services be customized for different industries?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, our AI Recruitment Management System is fully customizable for various sectors including IT, healthcare, finance, retail, and more—ensuring tailored workflows and AI algorithms for precise hiring."
+              }
+            },{
+              "@type": "Question",
+              "name": "Is your AI recruitment system suitable for high-volume hiring?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. AppitSoftware's AI-powered recruitment solutions are built to handle large volumes of applications efficiently, making them ideal for enterprises with ongoing and bulk hiring needs."
+              }
+            }]
+          })
+        }}
+      />
       <TransparentHeader />
       <HideDefaultHeader />
       <AITalentAcquisition />
@@ -99,15 +170,7 @@ const page = () => {
         }}
       />
       <ImageWithTextSection sectionsData={sectionsData3} />
-      <ContactUs />
-
-      <FAQs
-        data={faqAITalentAcquisitionData}
-        heading={{
-          title: "Got Questions? We've Got Answers (FAQs)",
-          highlightText: "(FAQs)",
-        }}
-      />
+      <ContactUs />      <AITalentAcquisitionFAQ />
       <CTA />
       <AboveFooterSection />
       <Footer />

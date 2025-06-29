@@ -9,6 +9,22 @@ import FAQs from "@/components/pages/faqs";
 import CTA from "@/components/pages/cta";
 import AboveFooterSection from "@/components/home/AboveFooterSection";
 import Footer from "@/components/home/Footer";
+import Script from "next/script";
+
+export const metadata = {
+  title: 'Shopify Solutions | APPIT Software Solutions Inc.',
+  description: 'APPIT Software\'s expertise in Shopify Solutions develops intuitive and robust eCommerce platforms that ensure a seamless shopping experience for your customers.',
+  keywords: [
+    'Shopify Solutions',
+    'custom Shopify development',
+    'Shopify Store Setup & Configuration Services',
+    'Shopify Migration Services',
+    'Shopify Store Plus Services',
+    'Shopify app development',
+    'Shopify theme customization',
+    'Shopify Plus enterprise solutions'
+  ]
+};
 
 const Page = () => {
   const oracleHeroData = {
@@ -113,42 +129,113 @@ We integrate AI into every layer—from creating visually compelling storefronts
     {
       question: `What Shopify Solutions Services does AppitSoftware provide?`,
       answer: [
-        "Oracle AI caters to industries like retail, healthcare, finance, manufacturing, and more.",
+        "AppitSoftware offers end-to-end Shopify Solutions Services including store setup, custom development, AI-powered features, and ongoing maintenance to create high-performing eCommerce experiences.",
       ],
     },
     {
       question: `Can you handle Shopify Store Setup & Configuration Services?`,
       answer: [
-        "Implementation time varies but is typically completed within 4-8 weeks, depending on the complexity.",
+        "Yes, we provide full Shopify Store Setup & Configuration Services including theme installation, product uploads, payment gateway integration, and tailored design to align with your brand.",
       ],
     },
     {
       question: `Do you offer Custom Shopify Development Services?`,
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "Absolutely. Our Custom Shopify Development Services include building bespoke features, creating unique store layouts, and integrating AI functionalities to boost user engagement and conversions.",
       ],
     },
     {
       question: `What do Shopify App Integration & Customization Services include?`,
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "We integrate and customize third-party and private Shopify apps to extend your store's capabilities, improve performance, and streamline operations using automation and AI-driven tools.",
       ],
     },
     {
       question: `Can you assist with Shopify Migration Services?`,
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "Yes, our Shopify Migration Services ensure smooth and secure transfers from platforms like WooCommerce, Magento, or BigCommerce, preserving SEO, customer data, and product catalogs.",
       ],
     },
     {
-      question: `What are Shopify Security Audit Services, and how can they help?`,
+      question: `What are Shopify Security Audit Services, and how can they help?`,
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "Our Shopify Security Audit Services assess your store for vulnerabilities, implement security best practices, and use AI tools to proactively monitor and protect your eCommerce environment.",
       ],
     },
   ];
   return (
     <>
+      <Script
+        type="application/ld+json"
+        className="schemantra"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "WebPage",
+            "acquireLicensePage": "https://www.appitsoftware.com/services/shopify/",
+          }),
+        }}
+      />
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What Shopify Solutions Services does AppitSoftware provide?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "AppitSoftware offers end-to-end Shopify Solutions Services including store setup, custom development, AI-powered features, and ongoing maintenance to create high-performing eCommerce experiences.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Can you handle Shopify Store Setup & Configuration Services?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes, we provide full Shopify Store Setup & Configuration Services including theme installation, product uploads, payment gateway integration, and tailored design to align with your brand.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Do you offer Custom Shopify Development Services?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Absolutely. Our Custom Shopify Development Services include building bespoke features, creating unique store layouts, and integrating AI functionalities to boost user engagement and conversions.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What do Shopify App Integration & Customization Services include?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "We integrate and customize third-party and private Shopify apps to extend your store's capabilities, improve performance, and streamline operations using automation and AI-driven tools.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Can you assist with Shopify Migration Services?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes, our Shopify Migration Services ensure smooth and secure transfers from platforms like WooCommerce, Magento, or BigCommerce, preserving SEO, customer data, and product catalogs.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What are Shopify Security Audit Services, and how can they help?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Our Shopify Security Audit Services assess your store for vulnerabilities, implement security best practices, and use AI tools to proactively monitor and protect your eCommerce environment.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
       <TransparentHeader />
       <HideDefaultHeader />
       <OracleHero data={oracleHeroData} className="md:ml-[51px] mr-auto" />

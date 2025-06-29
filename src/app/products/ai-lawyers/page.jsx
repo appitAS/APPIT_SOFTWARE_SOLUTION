@@ -17,6 +17,22 @@ import WhyChoose from "../../../components/pages/why-choose/why-choose";
 import AboveFooterSection from "../../../components/home/AboveFooterSection";
 import Footer from "../../../components/home/Footer";
 import React from "react";
+import Script from "next/script";
+
+export const metadata = {
+  title: 'Legal AI Assistance | Smart Legal Solutions Powered By AI - Appit Software',
+  description: 'Empower your Legal AI Assistance with AI-driven assistance. From document review to contract analysis, get faster, smarter, and more.',
+  keywords: [
+    'Legal AI Assistance',
+    'AI for lawyers',
+    'Legal AI Assistance Product Services',
+    'AI Lawyer Software Services',
+    'Law AI Software Services',
+    'legal document analysis',
+    'contract review AI',
+    'legal research automation'
+  ]
+};
 
 const sectionsData = [
   {
@@ -55,9 +71,58 @@ Reduce drafting time, boost consistency, and improve client service—while inte
   },
 ];
 
-const page = () => {
-  return (
+const page = () => {  return (
     <>
+      <Script
+        type="application/ld+json"
+        className="schemantra"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "WebPage",
+            "acquireLicensePage": "https://www.appitsoftware.com/legal-ai-assistance"
+          })
+        }}
+      />
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What is AI Lawyer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AI Lawyer is a cutting-edge platform that transforms law market using artificial intelligence. It automates research, simplifies complex terms, and handles documents efficiently. Ideal for individuals seeking affordable consultation and for professionals and students aiming to streamline their work. It offers personalized customization, multi-platform access, and prioritizes privacy, making it a valuable tool in LegalTech market."
+              }
+            },{
+              "@type": "Question",
+              "name": "Who is your platform for?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AI Lawyer caters to a diverse range of users, with the aim of making justice more accessible to everyone. It is ideal for: Consumers: Providing easy-to-understand explanations of terms and assistance in document handling. Lawyers: Automating routine tasks like research and paperwork, allowing lawyers to focus on client relationships and other critical aspects of their practice. Law Students: Offering a valuable learning tool to help prepare for a career in law, with features that assist in research writing and case briefs. Law Firms: Enhancing operational efficiency and client service quality by automating firm's processes and research, allowing to optimize resource allocation and focus on more complex matters."
+              }
+            },{
+              "@type": "Question",
+              "name": "What countries/languages does it works for?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our platfroms works worldwide and in many languages. You can ask questions in your language and get answers in the same language. This makes it easy for people from different places to use it."
+              }
+            },{
+              "@type": "Question",
+              "name": "How to start using AI Lawyer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "To begin using it, simply sign up with your Google/Apple account or any other email. We provide a free trial for all new users, allowing you to experience the full range of features and benefits of the platform without any initial investment."
+              }
+            }]
+          })
+        }}
+      />
       <TransparentHeader />
       <HideDefaultHeader />
       <AILawyerHero />

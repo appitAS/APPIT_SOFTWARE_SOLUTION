@@ -1,5 +1,4 @@
 import {
-  faqOutlookAICopilot,
   whyChooseAILawyerData,
   FeaturesOfOutlookAICopilot,
 } from "../../../assets/data";
@@ -9,7 +8,7 @@ import CTA from "../../../components/pages/cta";
 import Benefits from "../../../components/pages/benefit-grid/benefit-section";
 import ContactUs from "../../../components/pages/products/outlook-ai-copilot/contact-us";
 import OutlookAICopilotHighlights from "../../../components/pages/products/outlook-ai-copilot/outlook-ai-copilot-highlights";
-import FAQs from "../../../components/pages/faqs";
+import OutlookAICopilotFAQ from "../../../components/products/outlook-ai-copilot/OutlookAICopilotFAQ";
 import OutlookAICopilotHero from "../../../components/pages/products/outlook-ai-copilot/outlook-ai-copilot-hero";
 import TransparentHeader from "../../../components/layout/transparent-header/transparent-header";
 import HideDefaultHeader from "../../../components/layout/transparent-header/hide-default-header";
@@ -17,6 +16,22 @@ import WhyChoose from "../../../components/pages/why-choose/why-choose";
 import AboveFooterSection from "../../../components/home/AboveFooter";
 import Footer from "../../../components/home/Footer";
 import React from "react";
+import Script from "next/script";
+
+export const metadata = {
+  title: 'Outlook AI Copilot | Boost Productivity With Appit Software',
+  description: 'Appit Software\'s Outlook AI Copilot. Automate emails, schedule meetings, and streamline communication using intelligence.',
+  keywords: [
+    'Outlook AI Copilot',
+    'Outlook AI Copilot Product Services',
+    'Outlook AI Copilot Software Services',
+    'Outlook 365 AI Write Email Software Services',
+    'email automation',
+    'intelligent meeting scheduling',
+    'AI email assistant',
+    'productivity tools'
+  ]
+};
 
 const sectionsData = [
   {
@@ -44,6 +59,63 @@ const sectionsData2 = [
 const page = () => {
   return (
     <>
+      <Script
+        type="application/ld+json"
+        className="schemantra"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "WebPage",
+            "acquireLicensePage": "https://www.appitsoftware.com/products/outlook-ai-copilot/"
+          })
+        }}
+      />
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What are Outlook AI Copilot Product Services offered by AppitSoftware?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AppitSoftware provides advanced Outlook AI Copilot Product Services that integrate artificial intelligence into Microsoft Outlook, enhancing productivity through smart suggestions, automated responses, and intelligent scheduling."
+              }
+            },{
+              "@type": "Question",
+              "name": "How can Outlook AI Copilot Software Services benefit my business communication?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our Outlook AI Copilot Software Services enable users to streamline email management by auto-drafting replies, summarizing long threads, and prioritizing messages, saving time and reducing manual effort."
+              }
+            },{
+              "@type": "Question",
+              "name": "What is Outlook 365 AI Write Email Software and how does it work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Outlook 365 AI Write Email Software from AppitSoftware uses natural language processing (NLP) to draft professional, context-aware emails automatically, improving communication speed and consistency."
+              }
+            },{
+              "@type": "Question",
+              "name": "Can AppitSoftware customize Outlook AI tools for specific business needs?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, AppitSoftware customizes Outlook AI Copilot functionalities based on business workflows, including language preferences, tone adjustment, integration with CRM tools, and task automation."
+              }
+            },{
+              "@type": "Question",
+              "name": "Is the Outlook AI Copilot secure for enterprise communication?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. AppitSoftware ensures enterprise-grade security and compliance in all Outlook AI Copilot solutions, including data encryption, secure API integrations, and adherence to Microsoft 365 security protocols."
+              }
+            }]
+          })
+        }}
+      />
       <TransparentHeader />
       <HideDefaultHeader />
       <OutlookAICopilotHero />
@@ -65,14 +137,7 @@ const page = () => {
         }}
       />
       <OutlookAICopilotHighlights />
-      <ImageWithTextSection sectionsData={sectionsData2} />
-      <FAQs
-        data={faqOutlookAICopilot}
-        heading={{
-          title: "Got Questions? We've Got Answers (FAQs)",
-          highlightText: "(FAQs)",
-        }}
-      />
+      <ImageWithTextSection sectionsData={sectionsData2} />      <OutlookAICopilotFAQ />
       <CTA />
       <ContactUs />
       <AboveFooterSection />

@@ -10,6 +10,22 @@ import CTA from "@/components/pages/cta";
 import AboveFooterSection from "@/components/home/AboveFooterSection";
 import Footer from "@/components/home/Footer";
 import CyberFeaturesSection from "@/components/pages/cybersecurity/CyberFeaturesSection";
+import Script from "next/script";
+
+export const metadata = {
+  title: 'Cyber Security GRC Solutions | APPIT Software Solutions Inc',
+  description: 'Explore APPIT Software Solutions Inc. Cyber Security GRC Solutions to enhance your organization\'s risk management and compliance strategies.',
+  keywords: [
+    'Cyber Security GRC Solutions',
+    'Cyber Security Cloud Services',
+    'Cyber Security GRC It services',
+    'Cyber Security GRC Software Services',
+    'Cyber Security GRC Software Company',
+    'risk management solutions',
+    'compliance management',
+    'information security governance'
+  ]
+};
 
 const Page = () => {
   const oracleHeroData = {
@@ -83,44 +99,105 @@ With Appitsoftware, businesses gain full visibility and control over their cloud
     {
       question: "What are Cyber Security GRC Software Services?",
       answer: [
-        "Oracle AI caters to industries like retail, healthcare, finance, manufacturing, and more.",
+        "Cyber Security GRC Software Services provided by AppitSoftware help organizations manage governance, risk, and compliance (GRC) efficiently. Our AI-powered platforms offer real-time monitoring, threat detection, and automated compliance reporting to ensure your IT infrastructure remains secure.",
       ],
     },
     {
-      question: "What do Cyber Security Managed Services include?",
+      question: "What do Cyber Security GRC Managed Services include?",
       answer: [
-        "Implementation time varies but is typically completed within 4-8 weeks, depending on the complexity.",
+        "AppitSoftware's Cyber Security GRC Managed Services cover end-to-end risk management, policy enforcement, incident response, and regulatory compliance. Our experts work proactively to manage your cybersecurity landscape, ensuring 24/7 protection and continuous improvement.",
       ],
     },
     {
-      question: "How do Cyber Security Cloud Services benefit my Organization?",
+      question: "How do Cyber Security Cloud Services benefit my organization?",
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "With our Cyber Security Cloud Services, AppitSoftware secures your cloud environments by using AI-driven threat intelligence, access controls, and data encryption. These services are ideal for businesses transitioning to or operating in cloud infrastructures like AWS, Azure, or Google Cloud.",
       ],
     },
     {
-      question: "What the Key Features of cyber security GRC Solution?",
+      question: "What are the key features of your Cyber Security GRC Solutions?",
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "Our Cyber Security GRC Solutions offer features like automated risk assessments, compliance tracking, role-based access control, AI-based threat prediction, and audit-ready reports. These tools help businesses stay compliant with international standards like GDPR, ISO 27001, and HIPAA.",
       ],
     },
     {
-      question:
-        "What does your Cyber Security GRC IT Services offerings include?",
+      question: "What does your Cyber Security GRC IT Services offering include?",
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "AppitSoftware's Cyber Security GRC IT Services include the implementation, integration, and ongoing support of GRC frameworks across your IT systems. We specialize in leveraging AI to streamline GRC processes, enhance security posture, and reduce human error.",
       ],
     },
     {
-      question:
-        "Why choose AppitSoftware as cyber security GRC software company?",
+      question: "Why choose AppitSoftware as your Cyber Security GRC Software Company?",
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "As a leading Cyber Security GRC Software Company, AppitSoftware combines cutting-edge AI technologies with deep cybersecurity expertise. We provide scalable, automated, and compliant GRC solutions tailored to industries such as finance, healthcare, manufacturing, and tech.",
       ],
     },
-  ];
-  return (
+  ];  return (
     <>
+      <Script
+        type="application/ld+json"
+        className="schemantra"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "WebPage",
+            "acquireLicensePage": "https://www.appitsoftware.com/cyber-security-grc-solutions/"
+          })
+        }}
+      />
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What are Cyber Security GRC Solutions?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cyber Security GRC Solutions integrate governance, risk management, and compliance into a unified framework that strengthens your organization's security posture while ensuring regulatory compliance."
+              }
+            },{
+              "@type": "Question",
+              "name": "How do AI-Driven Cyber GRC Services help my business?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AI-Driven Cyber GRC Services use machine learning to identify patterns, detect anomalies, and predict potential threats—reducing manual work while improving threat detection, incident response, and compliance management."
+              }
+            },{
+              "@type": "Question",
+              "name": "What does AppitSoftware's Cyber GRC Software Services include?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our Cyber GRC Software Services include centralized policy management, automated compliance monitoring, risk assessment tools, security control assessment, audit management, and real-time dashboards with actionable insights."
+              }
+            },{
+              "@type": "Question",
+              "name": "Can AppitSoftware help with Cyber Security GRC Framework Implementation?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we provide comprehensive Cyber Security GRC Framework Implementation services to design, deploy, and manage custom frameworks aligned with industry standards like ISO 27001, NIST, and SOC 2."
+              }
+            },{
+              "@type": "Question",
+              "name": "Does AppitSoftware offer Managed Cyber GRC Services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, our Managed Cyber GRC Services provide continuous monitoring, regular security assessments, compliance updates, incident response, and expert guidance—all handled by our dedicated team of security professionals."
+              }
+            },{
+              "@type": "Question",
+              "name": "How do Cyber GRC Consulting Services benefit organizations?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our Cyber GRC Consulting Services help organizations assess current security postures, develop strategic roadmaps, optimize resource allocation, and build resilient security programs aligned with business objectives."
+              }
+            }]
+          })
+        }}
+      />
       <TransparentHeader />
       <HideDefaultHeader />
       <OracleHero data={oracleHeroData} className="md:ml-[51px] mr-auto" />

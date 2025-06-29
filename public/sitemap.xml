@@ -1,57 +1,387 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>/</loc>
-    <lastmod>2025-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>/about</loc>
-    <lastmod>2025-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>/services</loc>
-    <lastmod>2025-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>/career</loc>
-    <lastmod>2025-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>/contact</loc>
-    <lastmod>2025-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>/services/oracle-ai</loc>
-    <lastmod>2025-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>/products/ai-lawyers</loc>
-    <lastmod>2025-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-  <loc>/products/ai-talent-acquisition</loc>
-  <lastmod>2025-06-19</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.appitsoftware.com/</loc>
+  <lastmod>2025-06-27T08:05:35+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-  <loc>/products/helix-ai-pharma</loc>
-  <lastmod>2025-06-19</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
+  <loc>https://www.appitsoftware.com/oracle-cloud-erp/</loc>
+  <lastmod>2025-06-27T09:42:15+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://www.appitsoftware.com/about/</loc>
+  <lastmod>2025-06-27T09:19:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/blog/</loc>
+  <lastmod>2025-06-27T06:07:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/career/</loc>
+  <lastmod>2025-06-27T06:26:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/contact/</loc>
+  <lastmod>2025-06-26T21:23:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/oracle-ai-solutions/</loc>
+  <lastmod>2025-06-27T13:03:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/servicenow-ai-solutions/</loc>
+  <lastmod>2025-06-27T06:09:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/cyber-security-grc-solutions/</loc>
+  <lastmod>2025-06-27T13:22:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/offshore-development-center-and-managed-services</loc>
+  <lastmod>2025-06-26T18:16:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/outsourced-it-support-services</loc>
+  <lastmod>2025-06-26T18:16:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/digital-transformation-services/</loc>
+  <lastmod>2025-06-27T06:18:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/genmind-consulting</loc>
+  <lastmod>2025-06-27T09:38:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/ecommerce-services/</loc>
+  <lastmod>2025-06-27T13:23:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/adobe-commerce-solutions</loc>
+  <lastmod>2025-06-27T00:04:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/magento-open-source-solutions</loc>
+  <lastmod>2025-06-26T14:24:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/bigcommerce-solutions</loc>
+  <lastmod>2025-06-26T17:35:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/shopify-solutions</loc>
+  <lastmod>2025-06-26T13:05:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/askgenie-ai</loc>
+  <lastmod>2025-06-27T02:52:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/smartchat-ai/</loc>
+  <lastmod>2025-06-27T13:23:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/ai-chatworks</loc>
+  <lastmod>2025-06-27T12:40:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/salesbot-ai/</loc>
+  <lastmod>2025-06-27T13:23:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/insightgen-ai</loc>
+  <lastmod>2025-06-27T06:45:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/food-and-beverages/</loc>
+  <lastmod>2025-06-27T06:47:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/whatsappbot-ai</loc>
+  <lastmod>2025-06-26T20:34:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/odoo-erp-solutions</loc>
+  <lastmod>2025-06-27T07:02:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/hostbooks-cloud-accounting-solutions</loc>
+  <lastmod>2025-06-27T13:05:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/legal-ai-assistance/</loc>
+  <lastmod>2025-06-27T13:23:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/ai-driven-talent-acquisition</loc>
+  <lastmod>2025-06-26T21:32:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/all-in-one-crm-solution</loc>
+  <lastmod>2025-06-26T15:53:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/smart-applicant-tracking-system</loc>
+  <lastmod>2025-06-27T05:33:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/outlook-ai-copilot</loc>
+  <lastmod>2025-06-27T07:22:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/time-tracknexus-software/</loc>
+  <lastmod>2025-06-27T05:03:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/helixai-pharma-innovation-hub/</loc>
+  <lastmod>2025-06-27T07:28:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/may-2025-cybersecurity-update-novel-ransomware-groups-and-heightened-supply-chain-attack-activity/</loc>
+  <lastmod>2025-06-27T08:05:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/googles-ai-powered-search-mode-arrives-in-india-how-to-access-it/</loc>
+  <lastmod>2025-06-27T10:53:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/perplexity-ai-expands-to-video-generation-for-x-platform/</loc>
+  <lastmod>2025-06-27T12:11:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/ai-driven-talent-acquisition/</loc>
+  <lastmod>2025-06-26T21:32:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/all-in-one-crm-solution/</loc>
+  <lastmod>2025-06-26T15:53:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/smart-applicant-tracking-system/</loc>
+  <lastmod>2025-06-27T05:33:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/case-study/</loc>
+  <lastmod>2025-06-26T17:16:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/16-billion-passwords-at-risk-the-greatest-cybersecurity-breach-in-history/</loc>
+  <lastmod>2025-06-26T20:31:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/perplexity-ai-search-option-now-live-in-firefox-heres-what-you-need-to-know/</loc>
+  <lastmod>2025-06-26T17:28:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/oracle-cloud-to-introduce-xais-grok-3-model-for-business-customers/</loc>
+  <lastmod>2025-06-27T01:15:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/the-10-premier-ai-consulting-firms-of-2025/</loc>
+  <lastmod>2025-06-27T13:23:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/new-era-for-web-browsing-dia-from-the-browser-company-begins-invite-only-beta/</loc>
+  <lastmod>2025-06-27T00:49:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/openai-doubles-annualised-revenue-to-10-billion-in-just-six-months/</loc>
+  <lastmod>2025-06-27T13:23:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/case-study-success-stories-with-appit-it-consulting-and-support-services/</loc>
+  <lastmod>2025-06-27T13:23:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/case-studies/</loc>
+  <lastmod>2025-06-27T09:40:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/job/oracle-cloud-integration/</loc>
+  <lastmod>2025-06-27T02:39:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/job/oracle-cloud-technical/</loc>
+  <lastmod>2025-06-27T04:04:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/job/oracle-cloud-hcm-technical/</loc>
+  <lastmod>2025-06-27T06:17:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/job/oracle-finance-cloud-technical/</loc>
+  <lastmod>2025-06-27T04:29:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/author/sai-kiran/</loc>
+  <lastmod>2025-06-27T13:23:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/ai-powered-structuring-and-analysis-of-cybersecurity-posture-information/</loc>
+  <lastmod>2025-06-27T13:24:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/ai-driven-search-innovation-elevating-customer-experience-for-a-tech-giant/</loc>
+  <lastmod>2025-06-27T13:24:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/ai-driven-knowledge-management-transformation-for-a-global-software-services-provider/</loc>
+  <lastmod>2025-06-26T20:50:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/oracle-cloud-erp-reimagines-the-future-of-finance/</loc>
+  <lastmod>2025-06-27T13:24:06+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/author/sai-kiran/page/2/</loc>
+  <lastmod>2025-06-27T13:24:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/author/sai-kiran/page/3/</loc>
+  <lastmod>2025-06-27T13:24:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/snowflake-summit-2025-sridhar-ramaswamy-and-sam-altman-unite-to-drive-enterprise-ai-transformation/</loc>
+  <lastmod>2025-06-27T13:24:13+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/oracles-40-billion-nvidia-chip-commitment-powering-openais-texas-ai-data-center/</loc>
+  <lastmod>2025-06-26T18:57:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/deploy-any-ai-any-agent-any-model-on-the-new-servicenow-ai-platform/</loc>
+  <lastmod>2025-06-27T13:24:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/servicenow-expands-workflow-data-fabric-to-empower-ai-agents-with-real-time-intelligence/</loc>
+  <lastmod>2025-06-27T13:24:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/oracle-cleveland-clinic-and-g42-forge-revolutionary-alliance-to-launch-ai-powered-global-healthcare-platform/</loc>
+  <lastmod>2025-06-27T03:11:58+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/stargate-uae-project-announced-with-support-from-openai-nvidia-oracle-and-more/</loc>
+  <lastmod>2025-06-27T13:24:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/gemini-nano-enabled-api-released-to-android-developers-ahead-of-google-i-o-2025/</loc>
+  <lastmod>2025-06-27T12:37:13+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/ai-chatbots-have-yet-to-disrupt-search-traffic-research-shows/</loc>
+  <lastmod>2025-06-27T07:08:36+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/googles-new-ai-mode-button-could-replace-im-feeling-lucky-feature/</loc>
+  <lastmod>2025-06-27T13:24:35+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/ai-chatbots-accounted-for-just-2-96-of-search-traffic-in-2024-study-shows/</loc>
+  <lastmod>2025-06-26T13:14:15+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/google-deploys-gemini-nano-in-chrome-to-protect-users-from-online-scams/</loc>
+  <lastmod>2025-06-27T13:24:38+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/openai-introduces-local-data-storage-for-chatgpt-enterprise-users-in-india/</loc>
+  <lastmod>2025-06-27T06:55:26+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/from-zero-to-dev-how-ai-is-changing-who-can-code/</loc>
+  <lastmod>2025-06-26T23:04:41+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/openai-scales-back-corporate-shift-nonprofit-remains-in-control/</loc>
+  <lastmod>2025-06-26T18:57:42+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.appitsoftware.com/microsoft-phases-out-skype/</loc>
+  <lastmod>2025-06-27T08:20:24+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+
+
 </urlset>

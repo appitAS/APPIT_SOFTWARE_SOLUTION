@@ -11,6 +11,22 @@ import FAQs from "@/components/pages/faqs";
 import CTA from "@/components/pages/cta";
 import AboveFooterSection from "@/components/home/AboveFooterSection";
 import Footer from "@/components/home/Footer";
+import Script from "next/script";
+
+export const metadata = {
+  title: 'Offshore Development Center And Managed Services | APPIT Software -2025',
+  description: 'Explore APPIT Software Solutions Inc. Offshore Development Center And Managed Services to optimize your IT operations.',
+  keywords: [
+    'Offshore Development Center And Managed Services',
+    'Custom Software Development Services',
+    'AI Software Development Services',
+    'Offshore Development Center',
+    'Offshore Software Consulting Services',
+    'dedicated development team',
+    'IT outsourcing solutions',
+    'managed software services'
+  ]
+};
 
 const Page = () => {
   const oracleHeroData = {
@@ -138,44 +154,113 @@ Whether you're modernizing legacy systems or building new platforms, we provide 
     {
       question: `What is an Offshore Development Center and how can it benefit my business?`,
       answer: [
-        "Oracle AI caters to industries like retail, healthcare, finance, manufacturing, and more.",
+        "An Offshore Development Center (ODC) at AppitSoftware provides dedicated development teams that work remotely to deliver high-quality software solutions. It helps reduce costs, accelerates project delivery, and gives you access to global talent and expertise.",
       ],
     },
     {
-      question: "What do your offshore consulting services include?",
+      question: "What do your Offshore Software Consulting Services include?",
       answer: [
-        "Implementation time varies but is typically completed within 4-8 weeks, depending on the complexity.",
+        "Our Offshore Software Consulting Services involve strategy planning, technology assessment, solution architecture, and roadmap creation. AppitSoftware guides businesses through digital transformation using agile methodologies and domain-specific expertise.",
       ],
     },
     {
-      question: "What type of custom development services do you offer?",
+      question: "What types of Custom Software Development Services do you offer?",
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "AppitSoftware offers end-to-end Custom Software Development Services, including web apps, mobile apps, enterprise platforms, and integrations. We tailor every solution to meet your specific business processes and performance needs.",
       ],
     },
     {
-      question: `How does AppitSoftware approach AI Software Development services?`,
+      question: `How does AppitSoftware approach AI Software Development Services?`,
       answer: [
-        "Oracle AI caters to industries like retail, healthcare, finance, manufacturing, and more.",
+        "Our AI Software Development Services involve designing and developing intelligent applications using machine learning, natural language processing, and predictive analytics. These solutions help businesses automate workflows, gain insights, and improve decision-making.",
       ],
     },
     {
-      question:
-        "What is included in your software Project Management Services?",
+      question: "What is included in your Software Project Management Services?",
       answer: [
-        "Implementation time varies but is typically completed within 4-8 weeks, depending on the complexity.",
+        "AppitSoftware provides full-cycle Software Project Management Services—covering planning, resource allocation, agile execution, risk mitigation, and reporting. We ensure your projects are delivered on time, within budget, and aligned with business goals.",
       ],
     },
     {
-      question:
-        "Why choose AppitSoftware for offshore and AI-Driven Software solution?",
+      question: "Why choose AppitSoftware for Offshore and AI-Driven Software Solutions?",
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "AppitSoftware combines global offshore capabilities with deep expertise in AI and software development. Our integrated approach helps businesses scale faster, innovate smarter, and manage projects more efficiently, all under one roof.",
       ],
     },
   ];
   return (
     <>
+      <Script
+        type="application/ld+json"
+        className="schemantra"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "WebPage",
+            "acquireLicensePage": "https://www.appitsoftware.com/services/odc/",
+          }),
+        }}
+      />
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What is an Offshore Development Center and how can it benefit my business?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "An Offshore Development Center (ODC) at AppitSoftware provides dedicated development teams that work remotely to deliver high-quality software solutions. It helps reduce costs, accelerates project delivery, and gives you access to global talent and expertise.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What do your Offshore Software Consulting Services include?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Our Offshore Software Consulting Services involve strategy planning, technology assessment, solution architecture, and roadmap creation. AppitSoftware guides businesses through digital transformation using agile methodologies and domain-specific expertise.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What types of Custom Software Development Services do you offer?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "AppitSoftware offers end-to-end Custom Software Development Services, including web apps, mobile apps, enterprise platforms, and integrations. We tailor every solution to meet your specific business processes and performance needs.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How does AppitSoftware approach AI Software Development Services?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Our AI Software Development Services involve designing and developing intelligent applications using machine learning, natural language processing, and predictive analytics. These solutions help businesses automate workflows, gain insights, and improve decision-making.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What is included in your Software Project Management Services?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "AppitSoftware provides full-cycle Software Project Management Services—covering planning, resource allocation, agile execution, risk mitigation, and reporting. We ensure your projects are delivered on time, within budget, and aligned with business goals.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Why choose AppitSoftware for Offshore and AI-Driven Software Solutions?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "AppitSoftware combines global offshore capabilities with deep expertise in AI and software development. Our integrated approach helps businesses scale faster, innovate smarter, and manage projects more efficiently, all under one roof.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
       <TransparentHeader />
       <HideDefaultHeader />
       <OracleHero data={oracleHeroData} className="md:ml-[51px] mr-auto" />

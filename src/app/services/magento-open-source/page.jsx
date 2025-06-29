@@ -12,6 +12,22 @@ import Footer from "@/components/home/Footer";
 import CyberFeatureCard from "@/components/pages/cybersecurity/CyberFeatureCard";
 import Image from "next/image";
 import FormWithImage from "@/components/pages/magento-open-source/FormWithImage";
+import Script from "next/script";
+
+export const metadata = {
+  title: 'Magento Open Source Solutions | APPIT Software Solutions',
+  description: 'APPIT Software expertise in Magento Open Source Solutions to develop flexible and scalable eCommerce platforms, and thrive in the digital marketplace.',
+  keywords: [
+    'Magento Open Source Solutions',
+    'Custom Magento Development Services',
+    'Magento Migration Services',
+    'Magento Performance Optimization Services',
+    'Magento Support & Maintenance Services',
+    'open source eCommerce',
+    'affordable eCommerce platform',
+    'customizable online store'
+  ]
+};
 
 const Page = () => {
   const oracleHeroData = {
@@ -146,44 +162,108 @@ const Page = () => {
 
   const faqData = [
     {
-      question: `What Magento Open Source Solutions Services does AppitSoftware provide?`,
+      question: "What Magento Open Source Solutions Services does APPIT Software provide?",
       answer: [
-        "Oracle AI caters to industries like retail, healthcare, finance, manufacturing, and more.",
+        "APPIT Software offers end-to-end Magento Open Source Solutions Services, including custom storefront development, module integration, theme customization, and AI enhancements tailored for scalable e-commerce success.",
       ],
     },
     {
-      question: `Do you offer Custom Magento Development Services for unique business needs?`,
+      question: "Do you offer Custom Magento Development Services for unique business needs?",
       answer: [
-        "Implementation time varies but is typically completed within 4-8 weeks, depending on the complexity.",
+        "Yes, we specialize in Custom Magento Development Services to design and build personalized features, extensions, and storefronts that align perfectly with your brand and customer journey.",
       ],
     },
     {
-      question: `Can AppitSoftware handle Magento Migration Services from other platforms?`,
+      question: "Can APPIT Software handle Magento Migration Services from other platforms?",
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
-      ],
-    },
-     {
-      question: `How can Magento Performance Optimization Services help improve my store?`,
-      answer: [
-        "Oracle AI caters to industries like retail, healthcare, finance, manufacturing, and more.",
+        "Absolutely. Our Magento Migration Services ensure a seamless shift from platforms like Shopify, WooCommerce, or legacy systems to Magento, preserving data, SEO, and store functionality.",
       ],
     },
     {
-      question: `What's included in your Magento Support & Maintenance Services?`,
+      question: "How can Magento Performance Optimization Services help improve my store?",
       answer: [
-        "Implementation time varies but is typically completed within 4-8 weeks, depending on the complexity.",
+        "Our Magento Performance Optimization Services include code cleanup, server-side tuning, database optimization, and AI-powered recommendations to boost page load speed and overall performance.",
       ],
     },
     {
-      question: `Do you build Custom Magento Extensions & Integrations Services?`,
+      question: "What's included in your Magento Support & Maintenance Services?",
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "We provide 24/7 Magento Support & Maintenance Services covering bug fixes, version upgrades, security patches, and performance monitoring to keep your online store running efficiently.",
+      ],
+    },
+    {
+      question: "Do you build Custom Magento Extensions & Integrations Services?",
+      answer: [
+        "Yes, APPIT Software creates Custom Magento Extensions and provides seamless integrations with CRMs, ERPs, payment gateways, and AI tools to extend your Magento store's capabilities.",
       ],
     },
   ];
   return (
     <>
+      <Script
+        type="application/ld+json"
+        className="schemantra"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "WebPage",
+            "acquireLicensePage": "https://www.appitsoftware.com/services/magento-open-source/"
+          })
+        }}
+      />
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What Magento Open Source Solutions Services does APPIT Software provide?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "APPIT Software offers end-to-end Magento Open Source Solutions Services, including custom storefront development, module integration, theme customization, and AI enhancements tailored for scalable e-commerce success."
+              }
+            },{
+              "@type": "Question",
+              "name": "Do you offer Custom Magento Development Services for unique business needs?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we specialize in Custom Magento Development Services to design and build personalized features, extensions, and storefronts that align perfectly with your brand and customer journey."
+              }
+            },{
+              "@type": "Question",
+              "name": "Can APPIT Software handle Magento Migration Services from other platforms?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. Our Magento Migration Services ensure a seamless shift from platforms like Shopify, WooCommerce, or legacy systems to Magento, preserving data, SEO, and store functionality."
+              }
+            },{
+              "@type": "Question",
+              "name": "How can Magento Performance Optimization Services help improve my store?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our Magento Performance Optimization Services include code cleanup, server-side tuning, database optimization, and AI-powered recommendations to boost page load speed and overall performance."
+              }
+            },{
+              "@type": "Question",
+              "name": "What's included in your Magento Support & Maintenance Services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We provide 24/7 Magento Support & Maintenance Services covering bug fixes, version upgrades, security patches, and performance monitoring to keep your online store running efficiently."
+              }
+            },{
+              "@type": "Question",
+              "name": "Do you build Custom Magento Extensions & Integrations Services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, APPIT Software creates Custom Magento Extensions and provides seamless integrations with CRMs, ERPs, payment gateways, and AI tools to extend your Magento store's capabilities."
+              }
+            }]
+          })
+        }}
+      />
       <TransparentHeader />
       <HideDefaultHeader />
       <OracleHero data={oracleHeroData} className="md:ml-[51px] mr-auto" />

@@ -10,6 +10,22 @@ import ImageWithTextSection from "../../../components/layout/image-text-section"
 import { BenefitData, faqData, KeyfeaturesData, whyChooseData } from "../../../assets/data"
 import AboveFooterSection from "../../../components/home/AboveFooterSection"
 import Footer from "../../../components/home/Footer"
+import Script from "next/script"
+
+export const metadata = {
+  title: 'APPIT Software | Oracle AI Solutions And Business Operations 2025',
+  description: 'APPIT Software\'s Oracle AI solutions and business operations are designed to streamline workflows and deliver real-time insights.',
+  keywords: [
+    'Oracle AI Solutions',
+    'Oracle Cloud Managed Services',
+    'Oracle Integration Services',
+    'Oracle ERP Services',
+    'Oracle Cloud Applications Services',
+    'business operations optimization',
+    'enterprise AI solutions',
+    'real-time business insights'
+  ]
+};
 
 const sectionsData = [
     {
@@ -59,6 +75,63 @@ const oracleHeroData = {
 const Page = () => {
     return (
         <>
+            <Script
+                type="application/ld+json"
+                className="schemantra"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "WebPage",
+                        "@id": "WebPage",
+                        "acquireLicensePage": "https://www.appitsoftware.com/oracle-ai-solutions/"
+                    })
+                }}
+            />
+            <Script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [{
+                            "@type": "Question",
+                            "name": "What industries can benefit from Oracle AI?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Oracle AI caters to industries like retail, healthcare, finance, manufacturing, and more."
+                            }
+                        },{
+                            "@type": "Question",
+                            "name": "What makes Oracle AI tools flexible?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Oracle AI tools are designed to grow with your business needs, supporting scalability and tailored solutions for different use cases."
+                            }
+                        },{
+                            "@type": "Question",
+                            "name": "What are the key benefits of using Oracle AI?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Key benefits include:\n•\tSeamless human-computer interactions with advanced language models\n•\tTransformative data analytics for actionable insights\n•\tPrecise sales, demand, and revenue predictions\n•\tPersonalized customer experiences\n•\tImproved logistics and inventory management\n•\tStreamlined HR processes (hiring, engagement, retention)\n•\tEnhanced fraud prevention\n•\tAutomated repetitive tasks and workflows"
+                            }
+                        },{
+                            "@type": "Question",
+                            "name": "What is Oracle AI and how does it work?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Oracle AI solutions leverage advanced language models and data analytics to enable seamless human-computer interaction, turn complex data into actionable insights, and provide real-time predictive analytics for business operations."
+                            }
+                        },{
+                            "@type": "Question",
+                            "name": "",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": ""
+                            }
+                        }]
+                    })
+                }}
+            />
             <TransparentHeader />
             <HideDefaultHeader />
             <OracleHero data={oracleHeroData}  className="md:ml-[51px] mr-auto" />

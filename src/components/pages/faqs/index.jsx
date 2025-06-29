@@ -41,7 +41,18 @@ const FAQs = ({ data, heading, sectionClassName }) => {
                     <AccordionContent>
                       <ul className="list-disc ml-5 space-y-2 text-black">
                         {Array.isArray(faq.answer) ? (
-                          faq.answer.map((point, i) => <li key={i}>{point}</li>)
+                          faq.answer.map((point, i) => (
+                            <li key={i}>
+                              {point.includes(":") ? (
+                                <>
+                                   <strong>{point.split(":")[0]}</strong>:
+                                 {point.split(":")[1]}
+                                </>
+                              ) : (
+                                point
+                              )}
+                            </li>
+                          ))
                         ) : (
                           <li>{faq.answer}</li>
                         )}
