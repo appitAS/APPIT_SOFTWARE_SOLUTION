@@ -5,6 +5,7 @@ import '@/styles/animations.css'
 import ChatbotWithPathCheck from '@/components/layout/ChatbotWithPathCheck'
 import ClientLayout from './clientLayout'
 import Footer from '@/components/home/Footer'
+import Script from 'next/script'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -81,9 +82,8 @@ export const metadata = {
     title: 'AppitSoftware - Leading Software Development Company',
     description: 'Transform your digital vision with innovative software solutions. Web development, mobile apps, and enterprise solutions.',
     images: ['/twitter-image.png'],
-  },
-  verification: {
-    google: 'your-google-verification-code',
+  },  verification: {
+    google: 'UGcbYI5b5x_t_XJfzAtRZ8xv7NQmDx-5QYI0q5o-zxM',
   },
   alternates: {
     canonical: '/',
@@ -99,10 +99,24 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${poppins.variable} ${jost.variable}`}>
-      <head>
+    <html lang="en" className={`${inter.variable} ${poppins.variable} ${jost.variable}`}> 
+         <head>
         <meta name="theme-color" content="#3b82f6" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <meta name="google-site-verification" content="UGcbYI5b5x_t_XJfzAtRZ8xv7NQmDx-5QYI0q5o-zxM" />
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-0W874HZFYN"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0W874HZFYN');
+          `}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

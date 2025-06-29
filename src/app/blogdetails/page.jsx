@@ -10,8 +10,16 @@ import AboveFooterSection from '@/components/home/AboveFooterSection';
 import Footer from '@/components/home/Footer';
 
 export const metadata = {
-  title: 'Blog Details | AppIT Solutions',
-  description: 'Explore our insightful blogs and get to know the minds driving innovation at AppitSoftware.',
+  title: 'Blog Details | APPIT Software Solutions',
+  description: 'Explore our insightful blogs and get to know the minds driving innovation at APPIT Software.',
+  keywords: [
+    'APPIT Software articles', 
+    'tech innovation blog', 
+    'IT insights', 
+    'software development insights', 
+    'AI technology blogs', 
+    'digital transformation articles'
+  ]
 };
 
 export default function BlogDetails() {

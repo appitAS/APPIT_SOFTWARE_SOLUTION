@@ -10,6 +10,22 @@ import FAQs from "@/components/pages/faqs";
 import CTA from "@/components/pages/cta";
 import AboveFooterSection from "@/components/home/AboveFooterSection";
 import Footer from "@/components/home/Footer";
+import Script from "next/script";
+
+export const metadata = {
+  title: 'Outsourced IT Support Services | Appit Software – 2025',
+  description: 'Boost your business efficiency with Appit Software\'s expert Outsourced IT Support Services. Reliable, scalable, and tailored solutions to keep your operations running smoothly. Contact us today!',
+  keywords: [
+    'Outsourced IT Support Services',
+    'AI Business IT Support Services',
+    'IT Consulting And Support Services',
+    'IT Technical Support Services',
+    'managed IT services',
+    'remote technical support',
+    'business IT solutions',
+    'enterprise technology support'
+  ]
+};
 
 const Page = () => {
   const oracleHeroData = {
@@ -54,48 +70,116 @@ So you can focus on growing your business.`,
 
   const faqData = [
     {
-      question: "What are the outsourced IT Services offered by AppitSoftware?",
+      question: "What are Outsourced IT Support Services offered by APPIT Software?",
       answer: [
-        "Oracle AI caters to industries like retail, healthcare, finance, manufacturing, and more.",
+        "APPIT Software's Outsourced IT Support Services provide businesses with comprehensive IT management, from system monitoring to troubleshooting, without the need for an in-house team. We ensure 24/7 support, proactive maintenance, and rapid issue resolution, helping you reduce costs and improve efficiency.",
       ],
     },
     {
-      question: "How can Al Business IT Support Services benefit my company?",
+      question: "How can AI Business IT Support Services benefit my company?",
       answer: [
-        "Implementation time varies but is typically completed within 4-8 weeks, depending on the complexity.",
+        "Our AI Business IT Support Services leverage artificial intelligence to automate issue detection, predict potential failures, and deliver faster resolutions. This advanced support approach ensures higher uptime, improved performance, and smarter decision-making for your business operations.",
       ],
     },
     {
-      question:
-        "What is included in AppitSoftware's IT Consulting And Support Services?",
+      question: "What is included in APPIT Software's IT Consulting And Support Services?",
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "With our IT Consulting And Support Services, APPIT Software offers strategic IT guidance, infrastructure assessment, system upgrades, and hands-on support. We help businesses align their technology with operational goals, ensuring optimal growth and innovation.",
       ],
     },
     {
-      question:
-        "Why should I choose AppitSoftware for IT Outsourcing Services?",
+      question: "Why should I choose APPIT Software for IT Outsourcing Services?",
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "APPIT Software's IT Outsourcing Services give you access to top-tier IT professionals, cutting-edge technology solutions, and 24/7 support. We reduce operational costs, improve service quality, and free up internal resources so you can focus on core business activities.",
       ],
     },
     {
-      question:
-        "What makes AppitSoftware's IT Technical Support Services stand out?",
+      question: "What makes APPIT Software's IT Technical Support Services stand out?",
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "Our IT Technical Support Services stand out due to our quick response times, AI-enhanced diagnostics, personalized service, and proactive problem-solving approach. We ensure minimal downtime and optimal system performance for all our clients.",
       ],
     },
     {
-      question: "How does AppitSoftware integrate Al into IT Support Services?",
+      question: "How does APPIT Software integrate AI into IT Support Services?",
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "Through our AI Business IT Support Services, we integrate AI-driven monitoring, predictive analytics, and intelligent ticketing systems. This smart integration allows for faster issue detection, smarter troubleshooting, and overall enhanced support experiences for businesses of all sizes.",
       ],
     },
   ];
 
   return (
     <>
+      <Script
+        type="application/ld+json"
+        className="schemantra"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "WebPage",
+            "acquireLicensePage": "https://www.appitsoftware.com/services/managed-services/",
+          }),
+        }}
+      />
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What are Outsourced IT Support Services offered by APPIT Software?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "APPIT Software's Outsourced IT Support Services provide businesses with comprehensive IT management, from system monitoring to troubleshooting, without the need for an in-house team. We ensure 24/7 support, proactive maintenance, and rapid issue resolution, helping you reduce costs and improve efficiency.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How can AI Business IT Support Services benefit my company?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Our AI Business IT Support Services leverage artificial intelligence to automate issue detection, predict potential failures, and deliver faster resolutions. This advanced support approach ensures higher uptime, improved performance, and smarter decision-making for your business operations.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What is included in APPIT Software's IT Consulting And Support Services?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "With our IT Consulting And Support Services, APPIT Software offers strategic IT guidance, infrastructure assessment, system upgrades, and hands-on support. We help businesses align their technology with operational goals, ensuring optimal growth and innovation.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Why should I choose APPIT Software for IT Outsourcing Services?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "APPIT Software's IT Outsourcing Services give you access to top-tier IT professionals, cutting-edge technology solutions, and 24/7 support. We reduce operational costs, improve service quality, and free up internal resources so you can focus on core business activities.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What makes APPIT Software's IT Technical Support Services stand out?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Our IT Technical Support Services stand out due to our quick response times, AI-enhanced diagnostics, personalized service, and proactive problem-solving approach. We ensure minimal downtime and optimal system performance for all our clients.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How does APPIT Software integrate AI into IT Support Services?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Through our AI Business IT Support Services, we integrate AI-driven monitoring, predictive analytics, and intelligent ticketing systems. This smart integration allows for faster issue detection, smarter troubleshooting, and overall enhanced support experiences for businesses of all sizes.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
       <TransparentHeader />
       <HideDefaultHeader />
       <OracleHero data={oracleHeroData} className="md:ml-[51px] mr-auto" />

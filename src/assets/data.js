@@ -313,15 +313,21 @@ export const faqData = [
     ],
   },
   {
-    question: "How long does Oracle AI take to implement?",
+    question: "What makes Oracle AI tools flexible?",
     answer: [
-      "Implementation time varies but is typically completed within 4-8 weeks, depending on the complexity.",
+      "Oracle AI tools are designed to grow with your business needs, supporting scalability and tailored solutions for different use cases.",
     ],
   },
   {
-    question: "Is Oracle AI secure?",
+    question: "What are the key benefits of using Oracle AI?",
     answer: [
-      "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+      "Key benefits include seamless human-computer interactions with advanced language models, transformative data analytics for actionable insights, precise sales and demand predictions, personalized customer experiences, improved logistics and inventory management, streamlined HR processes, enhanced fraud prevention, and automated repetitive tasks and workflows.",
+    ],
+  },
+  {
+    question: "What is Oracle AI and how does it work?",
+    answer: [
+      "Oracle AI solutions leverage advanced language models and data analytics to enable seamless human-computer interaction, turn complex data into actionable insights, and provide real-time predictive analytics for business operations.",
     ],
   },
 ];
@@ -588,39 +594,25 @@ export const faqTrackNexus = [
 
 export const faqAILawyerData = [
   {
+    id: 1,
     question: "What is AI Lawyer?",
-    answer: [
-      "AI Lawyer is a cutting-edge platform revolutionizing the legal industry through the power of artificial intelligence. It automates legal research, simplifies complex terminology, and streamlines document management with exceptional efficiency.",
-      "Whether you're an individual seeking affordable legal guidance, a professional aiming to optimize workflows, or a student navigating legal studies, AI Lawyer delivers tailored solutions for your needs.",
-      "With features like personalized customization, multi-platform accessibility, and a strong commitment to data privacy, AI Lawyer stands out as a smart, secure, and indispensable tool in the modern LegalTech landscape.",
-    ],
+    answer: "AI Lawyer is a cutting-edge platform that transforms law market using artificial intelligence. It automates research, simplifies complex terms, and handles documents efficiently. Ideal for individuals seeking affordable consultation and for professionals and students aiming to streamline their work. It offers personalized customization, multi-platform access, and prioritizes privacy, making it a valuable tool in LegalTech market."
   },
   {
-    question: "Who Is AI Lawyer For?",
-    answer: [
-      "AI Lawyer is designed to serve a wide range of users, with the goal of making legal support smarter, faster, and more accessible.",
-      "Consumers: Get easy-to-understand explanations of legal terms and guided support with document handling—no legal background required.",
-      "Lawyers: Automate time-consuming tasks like research and paperwork, so you can focus on strategy, advocacy, and client relationships.",
-      "Law Students: Use AI Lawyer as a powerful learning companion—perfect for legal research, writing assistance, and preparing case briefs.",
-      "Law Firms: Boost operational efficiency by automating research and document processes, improving service delivery and optimizing resource allocation.",
-    ],
+    id: 2,
+    question: "Who is your platform for?",
+    answer: "AI Lawyer caters to a diverse range of users, with the aim of making justice more accessible to everyone. It is ideal for: Consumers: Providing easy-to-understand explanations of terms and assistance in document handling. Lawyers: Automating routine tasks like research and paperwork, allowing lawyers to focus on client relationships and other critical aspects of their practice. Law Students: Offering a valuable learning tool to help prepare for a career in law, with features that assist in research writing and case briefs. Law Firms: Enhancing operational efficiency and client service quality by automating firm's processes and research, allowing to optimize resource allocation and focus on more complex matters."
   },
   {
-    question: "🌍 What Countries and Languages Does AI Lawyer Support?",
-    answer: [
-      "AI Lawyer is designed to work globally and supports a wide range of languages.",
-      "You can ask legal questions in your native language and receive accurate responses in the same language.",
-      "This multilingual capability ensures that users from different regions can access legal assistance that feels natural, clear, and easy to understand—making legal support truly accessible across borders.",
-    ],
+    id: 3,
+    question: "What countries/languages does it works for?",
+    answer: "Our platfroms works worldwide and in many languages. You can ask questions in your language and get answers in the same language. This makes it easy for people from different places to use it."
   },
   {
-    question: "How to Start Using AI Lawyer?",
-    answer: [
-      "Getting started with AI Lawyer is quick and easy. Simply sign up using your Google, Apple, or email account—no technical setup required.",
-      "All new users receive a free trial, giving you full access to our platform's features and benefits with zero upfront cost.",
-      "Explore how AI Lawyer can simplify legal work and enhance your productivity from day one.",
-    ],
-  },
+    id: 4,
+    question: "How to start using AI Lawyer?",
+    answer: "To begin using it, simply sign up with your Google/Apple account or any other email. We provide a free trial for all new users, allowing you to experience the full range of features and benefits of the platform without any initial investment."
+  }
 ];
 
 export const KeyfeaturesData = [

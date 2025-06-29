@@ -5,12 +5,27 @@ import OracleHero from "../../../components/pages/oralce-ai/oracle-hero";
 import React from "react";
 import { whyChooseData } from "@/assets/data";
 import WhyChoose from "@/components/home/WhyChoose";
-
+import Script from "next/script";
 import FAQs from "@/components/pages/faqs";
 import AboveFooterSection from "@/components/home/AboveFooterSection";
 import Footer from "@/components/home/Footer";
 import Testimonials from "@/components/home/Testimonials";
 import FormSection from "@/components/pages/big-commerce/FormSection";
+
+export const metadata = {
+  title: 'Adobe Commerce Solutions | APPIT Software Solutions Inc.',
+  description: 'Explore APPIT Software Solutions Inc. expertise in Adobe Commerce Solutions to build scalable and secure eCommerce platforms.',
+  keywords: [
+    'Adobe Commerce Solutions',
+    'Adobe Commerce Solutions Services',
+    'Custom Adobe Commerce Development Services',
+    'Adobe Commerce Migration Services',
+    'Adobe Commerce Performance Optimization Services',
+    'Magento Commerce',
+    'enterprise eCommerce platform',
+    'B2B eCommerce solutions'
+  ]
+};
 
 const Page = () => {
   const oracleHeroData = {
@@ -101,26 +116,107 @@ const Page = () => {
 
   const faqData = [
     {
-      question: `What industries can benefit from Oracle AI?`,
+      question: "What Adobe Commerce Solutions Services does APPIT Software offer?",
       answer: [
-        "Oracle AI caters to industries like retail, healthcare, finance, manufacturing, and more.",
+        "APPIT Software delivers comprehensive Adobe Commerce Solutions Services, including end-to-end e-commerce store development, platform customization, AI-driven enhancements, and ongoing maintenance for seamless business operations.",
       ],
     },
     {
-      question: `Oracle AI caters to industries like retail, healthcare, finance, manufacturing, and more.`,
+      question: "Do you provide Custom Adobe Commerce Development Services?",
       answer: [
-        "Implementation time varies but is typically completed within 4-8 weeks, depending on the complexity.",
+        "Yes, we specialize in Custom Adobe Commerce Development Services tailored to your business needs—ranging from UI/UX customization to backend feature development and AI-based personalization tools.",
       ],
     },
     {
-      question: `Is Oracle AI secure?`,
+      question: "What is included in your Adobe Commerce Migration Services?",
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "Our Adobe Commerce Migration Services ensure a smooth transition from legacy systems or other platforms to Adobe Commerce, with complete data integrity, SEO retention, and zero downtime.",
       ],
     },
-  ];
-  return (
+    {
+      question: "How can Adobe Commerce Performance Optimization Services benefit my online store?",
+      answer: [
+        "Our Adobe Commerce Performance Optimization Services include code refinement, database tuning, caching, and load balancing, all designed to improve speed, scalability, and user experience.",
+      ],
+    },
+    {
+      question: "Do you offer Custom Adobe Commerce Extensions & Integrations Services?",
+      answer: [
+        "Absolutely. APPIT Software creates Custom Adobe Commerce Extensions and integrates third-party tools like CRMs, ERPs, payment gateways, and AI modules to enhance your store's functionality.",
+      ],
+    },
+    {
+      question: "Why choose APPIT Software for Adobe Commerce development and support?",
+      answer: [
+        "As an AI-driven company, APPIT Software blends deep technical Adobe Commerce expertise with cutting-edge AI capabilities to deliver innovative, high-performance e-commerce solutions that help your business scale.",
+      ],
+    },
+  ];  return (
     <>
+      <Script
+        type="application/ld+json"
+        className="schemantra"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "WebPage",
+            "acquireLicensePage": "https://www.appitsoftware.com/adobe-commerce-solutions/"
+          })
+        }}
+      />
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What Adobe Commerce Solutions Services does AppitSoftware offer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AppitSoftware delivers comprehensive Adobe Commerce Solutions Services, including end-to-end e-commerce store development, platform customization, AI-driven enhancements, and ongoing maintenance for seamless business operations."
+              }
+            },{
+              "@type": "Question",
+              "name": "Do you provide Custom Adobe Commerce Development Services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we specialize in Custom Adobe Commerce Development Services tailored to your business needs—ranging from UI/UX customization to backend feature development and AI-based personalization tools."
+              }
+            },{
+              "@type": "Question",
+              "name": "What is included in your Adobe Commerce Migration Services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our Adobe Commerce Migration Services ensure a smooth transition from legacy systems or other platforms to Adobe Commerce, with complete data integrity, SEO retention, and zero downtime."
+              }
+            },{
+              "@type": "Question",
+              "name": "How can Adobe Commerce Performance Optimization Services benefit my online store?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our Adobe Commerce Performance Optimization Services include code refinement, database tuning, caching, and load balancing, all designed to improve speed, scalability, and user experience."
+              }
+            },{
+              "@type": "Question",
+              "name": "Do you offer Custom Adobe Commerce Extensions & Integrations Services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. AppitSoftware creates Custom Adobe Commerce Extensions and integrates third-party tools like CRMs, ERPs, payment gateways, and AI modules to enhance your store's functionality."
+              }
+            },{
+              "@type": "Question",
+              "name": "Why choose AppitSoftware for Adobe Commerce development and support?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "As an AI-driven company, AppitSoftware blends deep technical Adobe Commerce expertise with cutting-edge AI capabilities to deliver innovative, high-performance e-commerce solutions that help your business scale."
+              }
+            }]
+          })
+        }}
+      />
       <TransparentHeader />
       <HideDefaultHeader />
       <OracleHero data={oracleHeroData} className="md:ml-[51px] mr-auto" />

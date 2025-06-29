@@ -5,7 +5,6 @@ import OracleHero from "../../../components/pages/oralce-ai/oracle-hero";
 import React from "react";
 import {
   BenefitData,
-  faqData,
   ServiceNowfeaturesData,
   whyChooseData,
 } from "@/assets/data";
@@ -16,8 +15,50 @@ import FAQs from "@/components/pages/faqs";
 import CTA from "@/components/pages/cta";
 import AboveFooterSection from "@/components/home/AboveFooterSection";
 import Footer from "@/components/home/Footer";
+import Script from "next/script";
+
+export const metadata = {
+  title: 'ServiceNow AI Solutions | APPIT Software Solutions Inc.',
+  description: 'APPIT Software Solutions Inc. leverages ServiceNow AI Solutions to transform enterprise operations with intelligent automation and streamlined workflows.',
+  keywords: [
+    'ServiceNow AI Solutions',
+    'ServiceNow Managed Services',
+    'ServiceNow AI Integration Services',
+    'ServiceNow Cloud Services',
+    'ServiceNow AI Software Company',
+    'enterprise workflow automation',
+    'intelligent business operations',
+    'digital process transformation'
+  ]
+};
 
 const Page = () => {
+  const faqData = [
+    {
+      question: "How can ServiceNow AI benefit my business?",
+      answer: [
+        "ServiceNow AI automates ticketing, predicts system issues, and speeds up resolutions, enabling your business to operate more efficiently and reduce downtime."
+      ],
+    },
+    {
+      question: "Can ServiceNow AI be customized for different industries?",
+      answer: [
+        "Yes, it supports IT, finance, healthcare, retail, and other industries with tailored solutions that address industry-specific challenges and requirements."
+      ],
+    },
+    {
+      question: "How secure is ServiceNow AI?",
+      answer: [
+        "It complies with top security standards, including GDPR and HIPAA, to ensure comprehensive data protection across all implementations."
+      ],
+    },
+    {
+      question: "Does ServiceNow AI integrate with existing software?",
+      answer: [
+        "Yes, it connects with ERP, CRM, and ITSM platforms seamlessly, allowing for unified workflows and data exchange across your technology ecosystem."
+      ],
+    },
+  ];
   const oracleHeroData = {
     title: "ServiceNow AI",
     videoSrc: "/videos/service_now_hero_video.mp4",
@@ -73,83 +114,140 @@ As a trusted partner, AppitSoftware provides ongoing support and innovation—tr
         "As a trusted partner, AppitSoftware provides ongoing support and innovation—transforming your Oracle Cloud investment into a long-term competitive advantage.",
       ]
     },
-  ];
-  return (
+  ];  return (
     <>
-      <TransparentHeader />
+      <Script
+        type="application/ld+json"
+        className="schemantra"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "WebPage",
+            "acquireLicensePage": "https://www.appitsoftware.com/services/services-now-ai/"
+          })
+        }}
+      />
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "How can ServiceNow AI benefit my business?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ServiceNow AI automates ticketing, predicts system issues, and speeds up resolutions, enabling your business to operate more efficiently and reduce downtime."
+              }
+            },{
+              "@type": "Question",
+              "name": "Can ServiceNow AI be customized for different industries?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, it supports IT, finance, healthcare, retail, and other industries with tailored solutions that address industry-specific challenges and requirements."
+              }
+            },{
+              "@type": "Question",
+              "name": "How secure is ServiceNow AI?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It complies with top security standards, including GDPR and HIPAA, to ensure comprehensive data protection across all implementations."
+              }
+            },{
+              "@type": "Question",
+              "name": "Does ServiceNow AI integrate with existing software?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, it connects with ERP, CRM, and ITSM platforms seamlessly, allowing for unified workflows and data exchange across your technology ecosystem."
+              }
+            },{
+              "@type": "Question",
+              "name": "What services does Appit Software offer for ServiceNow AI?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Appit Software Solutions offers comprehensive ServiceNow AI services including implementation, managed services, integration with existing systems, and ongoing support to ensure optimal performance and value."
+              }
+            }]
+          })
+        }}
+      />
       <HideDefaultHeader />
-      <OracleHero data={oracleHeroData} className="md:ml-[51px] mr-auto" />
+      <TransparentHeader showBorder={true} />
+      <div className="mt-[80px]">
+        <OracleHero heroData={oracleHeroData} />
+        <ImageWithTextSection
+          sectionsData={sectionsData}
+          backgroundImages={[
+            {
+              src: "/images/utils/lines-left.png",
+              alt: "Decorative Lines",
+              className: "absolute top-0 -left-[30%] lg:left-0 z-[-1]",
+            },
+            {
+              src: "/images/utils/blue-paint-right.png",
+              alt: "Blue Paint",
+              className: "absolute top-0 -right-[55%] lg:right-0 z-[-1]",
+            },
+          ]}
+        />
 
-      <ImageWithTextSection
-        sectionsData={sectionsData}
-        backgroundImages={[
-          {
-            src: "/images/utils/lines-left.png",
-            alt: "Decorative Lines",
-            className: "absolute top-0 -left-[30%] lg:left-0 z-[-1]",
-          },
-          {
-            src: "/images/utils/blue-paint-right.png",
-            alt: "Blue Paint",
-            className: "absolute top-0 -right-[55%] lg:right-0 z-[-1]",
-          },
-        ]}
-      />
+        <WhyChoose
+          data={whyChooseData}
+          heading={{
+            title: "Why Choose APPIT Software Solutions?",
+            para: "We solve your most complex technology challenges with innovative, scalable solutions. From strategy to execution, we transform your digital ecosystem to unlock new growth.",
+            highlightText: "Why Choose",
+          }}
+        />
 
-      <WhyChoose
-        data={whyChooseData}
-        heading={{
-          title: "Why Choose APPIT Software Solutions?",
-          para: "We solve your most complex technology challenges with innovative, scalable solutions. From strategy to execution, we transform your digital ecosystem to unlock new growth.",
-          highlightText: "Why Choose",
-        }}
-      />
+        <ImageWithTextSection
+          sectionsData={sectionsData2}
+          backgroundImages={[
+            {
+              src: "/images/utils/lines-right.png",
+              alt: "Decorative Lines",
+              className: "absolute top-0 -right-[30%] lg:right-0 z-[-1]",
+            },
+            {
+              src: "/images/utils/blue-paint-left.png",
+              alt: "Blue Paint",
+              className: "absolute top-0 -left-[55%] lg:left-0 z-[-1]",
+            },
+          ]}
+        />
 
-      <ImageWithTextSection
-        sectionsData={sectionsData2}
-        backgroundImages={[
-          {
-            src: "/images/utils/lines-right.png",
-            alt: "Decorative Lines",
-            className: "absolute top-0 -right-[30%] lg:right-0 z-[-1]",
-          },
-          {
-            src: "/images/utils/blue-paint-left.png",
-            alt: "Blue Paint",
-            className: "absolute top-0 -left-[55%] lg:left-0 z-[-1]",
-          },
-        ]}
-      />
+        <KeyFeatures
+          data={ServiceNowfeaturesData}
+          heading={{
+            title: "Key Features",
+            para: "Discover the Core Features of Oracle AI with Appit Software Solutions",
+            highlightText: "Key",
+          }}
+        />
 
-      <KeyFeatures
-        data={ServiceNowfeaturesData}
-        heading={{
-          title: "Key Features",
-          para: "Discover the Core Features of Oracle AI with Appit Software Solutions",
-          highlightText: "Key",
-        }}
-      />
+        <Benefits
+          data={BenefitData}
+          heading={{
+            title: "Benefits of ServiceNow AI",
+            para: "Discover the Core Features of Oracle AI with Appit Software Solutions",
+            highlightText: "ServiceNow AI",
+          }}
+        />
 
-      <Benefits
-        data={BenefitData}
-        heading={{
-          title: "Benefits of ServiceNow AI",
-          para: "Discover the Core Features of Oracle AI with Appit Software Solutions",
-          highlightText: "ServiceNow AI",
-        }}
-      />
+        <FAQs
+          data={faqData}
+          heading={{
+            title: "Frequently Asked Questions (FAQs)",
+            highlightText: "(FAQs)",
+          }}
+        />
 
-      <FAQs
-        data={faqData}
-        heading={{
-          title: "Frequently Asked Questions (FAQs)",
-          highlightText: "(FAQs)",
-        }}
-      />
-
-      <CTA />
-      <AboveFooterSection socialMediaLink={false} />
-      <Footer />
+        <CTA />
+        <AboveFooterSection socialMediaLink={false} />
+        <Footer />
+      </div>
     </>
   );
 };

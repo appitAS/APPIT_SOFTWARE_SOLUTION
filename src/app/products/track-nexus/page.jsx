@@ -1,6 +1,5 @@
 import {
   BenefitTrackNexusData,
-  faqTrackNexus,
   KeyfeaturesHelixAiPharma,
   whyChooseAILawyerData,
 } from "../../../assets/data";
@@ -9,7 +8,7 @@ import DailyReportTable from "../../../components/layout/daily-report-table";
 import Benefits from "../../../components/pages/benefit-grid/benefit-section";
 import WorldwideTrusted from "../../../components/pages/benefit-grid/worldwide-text";
 import CTA from "../../../components/pages/cta";
-import FAQs from "../../../components/pages/faqs";
+import TrackNexusFAQ from "../../../components/products/track-nexus/TrackNexusFAQ";
 import TrackNexusHero from "../../../components/pages/products/track-nexus/track-nexus-hero";
 import TransparentHeader from "../../../components/layout/transparent-header/transparent-header";
 import HideDefaultHeader from "../../../components/layout/transparent-header/hide-default-header";
@@ -17,6 +16,22 @@ import WhyChoose from "../../../components/pages/why-choose/why-choose";
 import AboveFooterSection from "../../../components/home/AboveFooter";
 import Footer from "../../../components/home/Footer";
 import React from "react";
+import Script from "next/script";
+
+export const metadata = {
+  title: 'Stay On Top With The #1 Productivity Tracking Software | TrackNexus',
+  description: 'Boost efficiency and accountability with TrackNexus—the leading productivity tracking software for teams. Track time, monitor activity, and optimize performance in real time.',
+  keywords: [
+    'Time tracking software pricing',
+    'Employee time tracking cost',
+    'Productivity software pricing',
+    'Time tracking tool pricing comparison',
+    'Time tracking pricing plans',
+    'Cost of the time tracking app',
+    'team performance tracking',
+    'productivity monitoring'
+  ]
+};
 
 const sectionsData = [
   {
@@ -84,6 +99,77 @@ const sectionsData3 = [
 const page = () => {
   return (
     <>
+      <Script
+        type="application/ld+json"
+        className="schemantra"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "WebPage",
+            "acquireLicensePage": "https://www.appitsoftware.com/products/track-nexus/",
+          }),
+        }}
+      />
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What is the main objective of this system?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The main objective is to use AI-powered analytics and security features to monitor employee productivity, detect non-work activities, ensure data security, and provide transparency through detailed reporting and mandatory review processes.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How does the system track employee productivity?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The system continuously captures screenshots, logs user activities, and records application usage. AI analyzes these inputs to classify activities as productive, unproductive, or neutral, calculates a productivity (AI) score, and provides breakdowns in daily reports.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How does the system identify leave days?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: 'If an employee does not log in at all during a workday (excluding weekends and company holidays), the system automatically marks that day as a "Leave" day in the reports.',
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How are screenshots and activities used for monitoring?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Screenshots are captured at configurable intervals during active sessions. AI uses OCR and image recognition to analyze screenshots, identifying open applications, websites, and document types. This data is correlated with activity logs for precise time mapping.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What measures are in place to protect data privacy and confidentiality?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Track Nexus enhances data security by monitoring outgoing emails and file transfers for potential risks, flagging when official emails are sent to personal addresses or sensitive files are transferred externally. All incidents are logged with comprehensive details and real-time alerts notify designated personnel. The system implements robust role-based access controls to ensure only authorized personnel can view sensitive information.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What kind of reports does Track Nexus generate?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Track Nexus offers automated day-wise and summary productivity reports that include key metrics such as leave status, AI Score, flagged non-work activities, and any data privacy incidents. The system supports data export in PDF and CSV formats for seamless integration with internal reporting processes.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
       <TransparentHeader />
       <HideDefaultHeader />
       <TrackNexusHero />
@@ -112,15 +198,8 @@ const page = () => {
       />
       <ImageWithTextSection sectionsData={sectionsData2} />
       <DailyReportTable />
-
       <ImageWithTextSection sectionsData={sectionsData3} />
-      <FAQs
-        data={faqTrackNexus}
-        heading={{
-          title: "Got Questions? We've Got Answers (FAQs)",
-          highlightText: "(FAQs)",
-        }}
-      />
+      <TrackNexusFAQ />
       <CTA />
       <AboveFooterSection />
       <Footer />

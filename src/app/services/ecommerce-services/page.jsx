@@ -12,6 +12,22 @@ import Footer from "@/components/home/Footer";
 import Testimonials from "@/components/home/Testimonials";
 import WhatWeOfferSection from "@/components/pages/e-commerce/WhatWeOfferSection";
 import WhyChooseSection from "@/components/pages/e-commerce/WhyChooseSection";
+import Script from "next/script";
+
+export const metadata = {
+  title: 'ECommerce Services | APPIT Software Solutions Inc.',
+  description: 'Explore APPIT Software Solutions Inc. comprehensive eCommerce services, including strategy, design, development, and marketing of online store effectively.',
+  keywords: [
+    'eCommerce services',
+    'E-commerce Software Development Services',
+    'Open Source E-commerce Platform Services',
+    'E-commerce Management Services',
+    'AI E-commerce Software Services',
+    'online store development',
+    'digital retail solutions',
+    'eCommerce implementation'
+  ]
+};
 
 const Page = () => {
   const oracleHeroData = {
@@ -70,36 +86,105 @@ Our expert team focuses on user experience, automation, and future-ready technol
     {
       question: `What E-commerce Solutions Services does AppitSoftware offer?`,
       answer: [
-        "Oracle AI caters to industries like retail, healthcare, finance, manufacturing, and more.",
+        "AppitSoftware provides end-to-end E-commerce Solutions Services, including online store development, payment gateway integration, mobile optimization, and performance analytics to help businesses thrive in the digital marketplace.",
       ],
     },
     {
       question: `What is included in your E-commerce Software Development Services?`,
       answer: [
-        "Implementation time varies but is typically completed within 4-8 weeks, depending on the complexity.",
+        "Our E-commerce Software Development Services cover custom platform creation, API integrations, UI/UX design, backend systems, and scalable architecture tailored to meet your specific business requirements.",
+      ],
+    },
+    {
+      question: `Do you support Open Source E-commerce Platform Services?`,
+      answer: [
+        "Yes, we specialize in Open Source E-commerce Platform Services, including Magento, WooCommerce, PrestaShop, and OpenCart, offering customization, support, and upgrades to match your business goals.",
       ],
     },
     {
       question: `What are E-commerce Management Services, and how can they benefit my business?`,
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "Our E-commerce Management Services include product catalog management, inventory tracking, order fulfillment, customer service integration, and performance monitoring, enabling you to focus on sales while we handle operations.",
       ],
     },
     {
-      question: `How does AppitSoftware use Al in E-commerce Software Services?`,
+      question: `How does AppitSoftware use AI in E-commerce Software Services?`,
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "We use AI in E-commerce Software Services to offer personalized shopping experiences, intelligent search, dynamic pricing, customer segmentation, product recommendations, and chatbot support, improving conversion rates and customer satisfaction.",
       ],
     },
     {
-      question: `Why choose AppitSoftware for E-commerce development and management ?`,
+      question: `Why choose AppitSoftware for E-commerce development and management?`,
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "AppitSoftware combines deep domain expertise with AI capabilities to build powerful, scalable, and customer-centric E-commerce platforms that grow with your business and deliver measurable ROI.",
       ],
     },
-  ];
-  return (
+  ];  return (
     <>
+      <Script
+        type="application/ld+json"
+        className="schemantra"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "WebPage",
+            "acquireLicensePage": "https://www.appitsoftware.com/ecommerce-services/"
+          })
+        }}
+      />
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What E-commerce Solutions Services does AppitSoftware offer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AppitSoftware provides end-to-end E-commerce Solutions Services, including online store development, payment gateway integration, mobile optimization, and performance analytics to help businesses thrive in the digital marketplace."
+              }
+            },{
+              "@type": "Question",
+              "name": "What is included in your E-commerce Software Development Services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our E-commerce Software Development Services cover custom platform creation, API integrations, UI/UX design, backend systems, and scalable architecture tailored to meet your specific business requirements."
+              }
+            },{
+              "@type": "Question",
+              "name": "Do you support Open Source E-commerce Platform Services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we specialize in Open Source E-commerce Platform Services, including Magento, WooCommerce, PrestaShop, and OpenCart, offering customization, support, and upgrades to match your business goals."
+              }
+            },{
+              "@type": "Question",
+              "name": "How can AI-Powered E-commerce Development Services benefit my business?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our AI-Powered E-commerce Development Services enhance customer experiences with personalized product recommendations, predictive analytics, chatbots, automated inventory management, and dynamic pricing to boost sales and operational efficiency."
+              }
+            },{
+              "@type": "Question",
+              "name": "Do you offer E-commerce Maintenance and Support Services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, our E-commerce Maintenance and Support Services provide ongoing technical assistance, security updates, performance optimization, feature enhancements, and rapid issue resolution to keep your online store running smoothly."
+              }
+            },{
+              "@type": "Question",
+              "name": "What makes AppitSoftware different from other e-commerce service providers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AppitSoftware stands out through our AI-first approach, industry expertise, custom solutions, comprehensive service offerings, and commitment to delivering measurable ROI with transparent communication throughout the project lifecycle."
+              }
+            }]
+          })
+        }}
+      />
       <TransparentHeader />
       <HideDefaultHeader />
       <OracleHero data={oracleHeroData} className="md:ml-[51px] mr-auto" />

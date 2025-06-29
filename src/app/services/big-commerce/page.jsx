@@ -11,6 +11,22 @@ import Testimonials from "@/components/home/Testimonials";
 import BenefitSection from "@/components/pages/big-commerce/BenefitSection";
 import FormSection from "@/components/pages/big-commerce/FormSection";
 import Footer from "@/components/home/Footer";
+import Script from "next/script";
+
+export const metadata = {
+  title: 'BigCommerce Solutions | APPIT Software Solutions Inc',
+  description: 'APPIT Software expertise in BigCommerce Solutions to develop robust, adaptable, and scalable eCommerce platforms, ensuring seamless shopping.',
+  keywords: [
+    'BigCommerce Solutions',
+    'BigCommerce Store',
+    'BigCommerce Service',
+    'BigCommerce Migration Services',
+    'custom BigCommerce development',
+    'enterprise eCommerce solutions',
+    'headless commerce implementation',
+    'omnichannel retail platform'
+  ]
+};
 
 
 const Page = () => {
@@ -56,26 +72,107 @@ const Page = () => {
 
   const faqData = [
     {
-      question: `What industries can benefit from Oracle AI?`,
+      question: "What BigCommerce Solutions Services does APPIT Software offer?",
       answer: [
-        "Oracle AI caters to industries like retail, healthcare, finance, manufacturing, and more.",
+        "APPIT Software provides comprehensive BigCommerce Solutions Services, including custom store design, theme development, AI-based product recommendations, and end-to-end eCommerce integration tailored for all business sizes.",
       ],
     },
     {
-      question: `Oracle AI caters to industries like retail, healthcare, finance, manufacturing, and more.`,
+      question: "Do you offer Custom BigCommerce Store Development Services?",
       answer: [
-        "Implementation time varies but is typically completed within 4-8 weeks, depending on the complexity.",
+        "Yes, our team specializes in Custom BigCommerce Store Development Services to build scalable, responsive, and feature-rich online stores optimized for conversion and user experience.",
       ],
     },
     {
-      question: `Is Oracle AI secure?`,
+      question: "Can APPIT Software help with BigCommerce API & App Integration Services?",
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "Absolutely. We offer robust BigCommerce API & App Integration Services to connect your store with third-party applications, CRM systems, ERP platforms, and AI tools for seamless business operations.",
       ],
     },
-  ];
-  return (
+    {
+      question: "Does APPIT Software support BigCommerce Migration Services from other platforms?",
+      answer: [
+        "Yes, we provide secure and smooth BigCommerce Migration Services from platforms like Shopify, Magento, or WooCommerce, ensuring no data loss and minimal downtime.",
+      ],
+    },
+    {
+      question: "What are BigCommerce Security Audit Services, and do you provide them?",
+      answer: [
+        "Our BigCommerce Security Audit Services identify vulnerabilities, apply necessary security patches, and implement best practices to keep your eCommerce store secure and compliant.",
+      ],
+    },
+    {
+      question: "How can your BigCommerce Performance Optimization Services help my business?",
+      answer: [
+        "We enhance your store's speed, responsiveness, and overall performance through server optimization, code enhancements, and AI-driven analytics for improved user experience and SEO rankings.",
+      ],
+    },
+  ];  return (
     <>
+      <Script
+        type="application/ld+json"
+        className="schemantra"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "WebPage",
+            "acquireLicensePage": "https://www.appitsoftware.com/bigcommerce-solutions"
+          })
+        }}
+      />
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What BigCommerce Solutions Services does AppitSoftware offer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AppitSoftware provides comprehensive BigCommerce Solutions Services, including custom store design, theme development, AI-based product recommendations, and end-to-end eCommerce integration tailored for all business sizes."
+              }
+            },{
+              "@type": "Question",
+              "name": "Do you offer Custom BigCommerce Store Development Services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, our team specializes in Custom BigCommerce Store Development Services to build scalable, responsive, and feature-rich online stores optimized for conversion and user experience."
+              }
+            },{
+              "@type": "Question",
+              "name": "Can AppitSoftware help with BigCommerce API & App Integration Services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. We offer robust BigCommerce API & App Integration Services to connect your store with third-party applications, CRM systems, ERP platforms, and AI tools for seamless business operations."
+              }
+            },{
+              "@type": "Question",
+              "name": "Does AppitSoftware support BigCommerce Migration Services from other platforms?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we provide secure and smooth BigCommerce Migration Services from platforms like Shopify, Magento, or WooCommerce, ensuring no data loss and minimal downtime."
+              }
+            },{
+              "@type": "Question",
+              "name": "What are BigCommerce Security Audit Services, and do you provide them?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our BigCommerce Security Audit Services identify vulnerabilities, apply necessary security patches, and implement best practices to keep your eCommerce store secure and compliant."
+              }
+            },{
+              "@type": "Question",
+              "name": "How can your BigCommerce Performance Optimization Services help my business?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We enhance your store's speed, responsiveness, and overall performance through server optimization, code enhancements, and AI-driven analytics for improved user experience and SEO rankings."
+              }
+            }]
+          })
+        }}
+      />
       <TransparentHeader />
       <HideDefaultHeader />
       <OracleHero data={oracleHeroData} className="md:ml-[51px] mr-auto" />

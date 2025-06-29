@@ -1,13 +1,11 @@
 import {
   BenefitHelixAIData,
-  faqHelixAiPharma,
   KeyfeaturesHelixAiPharma,
   whyChooseAILawyerData,
 } from "../../../assets/data";
 import ImageWithTextSection from "../../../components/layout/image-text-section";
 import Benefits from "../../../components/pages/benefit-grid/benefit-section";
 import CTA from "../../../components/pages/cta";
-import FAQs from "../../../components/pages/faqs";
 import KeyFeatures from "../../../components/pages/features/key-features";
 import HelixAIPharmaHero from "../../../components/pages/products/helix-ai-pharma/helix-ai-pharma-hero";
 import TransparentHeader from "../../../components/layout/transparent-header/transparent-header";
@@ -15,7 +13,24 @@ import HideDefaultHeader from "../../../components/layout/transparent-header/hid
 import WhyChoose from "../../../components/pages/why-choose/why-choose";
 import AboveFooterSection from "../../../components/home/AboveFooter";
 import Footer from "../../../components/home/Footer";
+import HelixAIPharmaFAQ from "../../../components/products/helix-ai-pharma/HelixAIPharmaFAQ";
 import React from "react";
+import Script from "next/script";
+
+export const metadata = {
+  title: 'HelixAI Pharma | AI-Driven Pharmaceutical Solutions',
+  description: 'Discover HelixAI Pharma – pioneering intelligent pharmaceutical solutions powered by advanced AI. Revolutionizing drug discovery, clinical research, and patient care with innovative technology for a healthier future.',
+  keywords: [
+    'AI in drug discovery',
+    'pharmaceutical AI solutions', 
+    'AI for clinical trials',
+    'AI-powered drug development',
+    'predictive modeling in pharma',
+    'pharmaceutical research AI',
+    'patient care AI solutions',
+    'healthcare AI technology'
+  ]
+};
 
 const sectionsData = [
   {
@@ -56,52 +71,132 @@ Our mission is simple: to modernize legal workflows through Law AI Software Serv
   },
 ];
 
-const page = () => {
+const Page = () => {
   return (
     <>
-      <TransparentHeader />
+      <Script
+        type="application/ld+json"
+        className="schemantra"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "WebPage",
+            "acquireLicensePage": "https://www.appitsoftware.com/products/helix-ai-pharma/",
+          }),
+        }}
+      />
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What is the HelixAI Pharma Product Platform?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "HelixAI Pharma Product Platform is an advanced, AI-powered solution designed to accelerate pharmaceutical research, drug discovery, clinical development, and regulatory compliance. It integrates domain-specific generative AI, data analytics, and workflow automation to drive efficiency and innovation across the pharmaceutical pipeline.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How does HelixAI use AI in pharmaceutical research?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "HelixAI leverages generative AI and machine learning to analyze large-scale scientific, clinical, and proprietary datasets. It helps identify novel drug candidates, optimize preclinical and clinical workflows, and provide actionable insights for regulatory and market intelligence.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Is my data secure on the HelixAI Pharma Platform?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes. HelixAI is built with enterprise-grade security and privacy in mind. Your proprietary data is protected, not used for model training, and can be deployed securely in your preferred environment—cloud, on-premises, or hybrid.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Can HelixAI integrate with our existing systems?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Absolutely. The platform supports integration with internal and external APIs, allowing you to connect your existing data sources, laboratory systems, and business applications for seamless workflow automation.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How does HelixAI support regulatory compliance?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "HelixAI provides AI-curated regulatory updates, automates documentation, and ensures data integrity for faster, more accurate regulatory submissions. It helps you stay ahead of evolving requirements and maintain audit readiness.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How do I get started with HelixAI Pharma Product Platform?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Contact the HelixAI team to schedule a demo or consultation. They will guide you through the platform's features and help tailor a solution to your organization's needs.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
       <HideDefaultHeader />
-      <HelixAIPharmaHero />
-      <ImageWithTextSection sectionsData={sectionsData} />
-      <Benefits
-        data={BenefitHelixAIData}
-        heading={{
-          title: "Instant Insights, Immediate Impact",
-          para: "From complex challenges to clear solutions",
-          highlightText: "Immediate Impact",
-        }}
-      />
-      <ImageWithTextSection sectionsData={sectionsData2} />
-
-      <WhyChoose
-        data={whyChooseAILawyerData}
-        heading={{
-          title: "Why Choose APPIT Software Solutions?",
-          para: "We solve your most complex technology challenges with innovative, scalable solutions. From strategy to execution, we transform your digital ecosystem to unlock new growth.",
-          highlightText: "Why Choose",
-        }}
-      />
-
-      <KeyFeatures
-        data={KeyfeaturesHelixAiPharma}
-        heading={{
-          title: "Helix AI Key Specification",
-          para: "HelixAI Pharma stands out for its comprehensive suite of AI-powered tools and platforms",
-          highlightText: "Specification",
-        }}
-      />
-      <FAQs
-        data={faqHelixAiPharma}
-        heading={{
-          title: "Got Questions? We've Got Answers (FAQs)",
-          highlightText: "(FAQs)",
-        }}
-      />
-      <CTA />
+      <TransparentHeader showBorder={true} />
+      <div className="mt-[80px]">
+        <HelixAIPharmaHero />
+        {sectionsData?.map((section, index) => (
+          <ImageWithTextSection
+            key={index}
+            section={{
+              data: section,
+              styles: {
+                bgColor: "bg-[#F7F9FB]",
+              },
+            }}
+          />
+        ))}
+        <KeyFeatures
+          data={KeyfeaturesHelixAiPharma}
+          heading={{
+            title: "Key Features",
+            para: "Discover the key features of our HelixAI Pharma",
+            highlightText: "Key",
+          }}
+        />
+        <Benefits
+          data={BenefitHelixAIData}
+          heading={{
+            title: "Benefits of Our AI Lawyers",
+            para: "Discover how our AI Lawyers can help your business",
+            highlightText: "Our AI Lawyers",
+          }}
+        />
+        <div className="max-w-[1920px] mx-auto">
+          {sectionsData2.map((section, index) => (
+            <ImageWithTextSection
+              key={index}
+              section={{
+                data: section,
+                styles: {
+                  bgColor: index % 2 === 0 ? "bg-white" : "bg-[#F7F9FB]",
+                },
+              }}
+            />
+          ))}
+        </div>
+        <WhyChoose data={whyChooseAILawyerData} />
+        <CTA />
+        <HelixAIPharmaFAQ />
+      </div>
       <AboveFooterSection />
       <Footer />
     </>
   );
 };
 
-export default page;
+export default Page;

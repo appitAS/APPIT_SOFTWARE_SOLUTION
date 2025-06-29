@@ -17,7 +17,7 @@ const ImageWithTextSection = ({
   return (
     <Section className={className}>
       {/* Optional background images */}
-      {backgroundImages.map((img, index) => (
+      {backgroundImages?.map((img, index) => (
         <Image
           key={index}
           src={img.src}
@@ -34,7 +34,7 @@ const ImageWithTextSection = ({
         {heading && (
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-[#252525]">
-              {heading.title.split(heading.highlightText).map((part, index) => (
+              {heading.title.split(heading.highlightText)?.map((part, index) => (
                 <React.Fragment key={index}>
                   {part}
                   {index === 0 && (
@@ -49,7 +49,7 @@ const ImageWithTextSection = ({
           </div>
         )}
 
-        {sectionsData.map((section, idx) => (
+        {sectionsData?.map((section, idx) => (
           <ImageWithText
             key={idx}
             {...section}

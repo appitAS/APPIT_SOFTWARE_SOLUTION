@@ -11,6 +11,22 @@ import CTA from "@/components/pages/cta";
 import AboveFooterSection from "@/components/home/AboveFooterSection";
 import Footer from "@/components/home/Footer";
 import AccrelerateSection from "@/components/pages/generative-ai/AccrelerateSection";
+import Script from "next/script";
+
+export const metadata = {
+  title: 'GenMind Consulting -Generative AI Advisory By APPIT Software',
+  description: 'APPIT Software GenMind Consulting services, we expert guidance in strategizing, and responsible Generative AI solutions to transform your business processes.',
+  keywords: [
+    'GenMind Consulting',
+    'GenMind Consulting And Services',
+    'Gen AI Software Services',
+    'Legal AI Software Services',
+    'GenAI Application Development Services',
+    'generative artificial intelligence',
+    'AI implementation strategy',
+    'business process automation'
+  ]
+};
 
 const Page = () => {
   const oracleHeroData = {
@@ -98,44 +114,115 @@ const Page = () => {
 
   const faqData = [
     {
-      question: `What is GenMind Consulting and services at AppitSoftware?`,
+      question: "What is GenMind Consulting and Services at APPIT Software?",
       answer: [
-        "Oracle AI caters to industries like retail, healthcare, finance, manufacturing, and more.",
+        "GenMind Consulting and Services at APPIT Software focus on delivering strategic AI-driven business solutions. We help organizations implement and scale Generative AI (GenAI) technologies across various industries with expert guidance and execution.",
       ],
     },
     {
-      question: `What do you Gen AI Software Services include?`,
+      question: "What do your Gen AI Software Services include?",
       answer: [
-        "Implementation time varies but is typically completed within 4-8 weeks, depending on the complexity.",
+        "Our Gen AI Software Services include developing custom generative AI applications such as chatbots, content automation tools, data summarization platforms, and personalized recommendation engines tailored to your business needs.",
       ],
     },
     {
-      question: `How can Legal AI software services help law firms and legal departments?`,
+      question: "How can Legal AI Software Services help law firms or legal departments?",
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "APPIT Software's Legal AI Software Services streamline document review, automate contract analysis, and provide smart legal research assistance, increasing accuracy and reducing manual workload for legal professionals.",
       ],
     },
     {
-      question: `What are GenAI application development Services?`,
+      question: "What are GenAI Application Development Services?",
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "GenAI Application Development Services involve creating advanced AI-powered tools and platforms that use large language models (LLMs) and machine learning to generate content, enhance decision-making, and optimize customer interactions.",
       ],
     },
     {
-      question: `What Microsoft CRM products and services does AppitSoftware offer?`,
+      question: "What Microsoft CRM Products and Services does APPIT Software offer?",
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "APPIT Software provides Microsoft CRM solutions including Dynamics 365 customization, integration, and support services. We help businesses improve customer engagement, automate sales workflows, and gain actionable insights.",
       ],
     },
     {
-      question: `Why choose AppitSoftware for AI and CRM services?`,
+      question: "Why choose APPIT Software for AI and CRM services?",
       answer: [
-        "Yes, Oracle AI adheres to the highest security standards, including GDPR compliance and end-to-end encryption.",
+        "APPIT Software blends cutting-edge AI capabilities with enterprise-grade CRM expertise. Whether you're looking to enhance customer management or deploy GenAI tools, we offer reliable, scalable solutions that drive innovation and performance.",
       ],
     },
   ];
   return (
     <>
+      <Script
+        type="application/ld+json"
+        className="schemantra"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "WebPage",
+            "acquireLicensePage": "https://www.appitsoftware.com/generative-ai/",
+          }),
+        }}
+      />
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What is GenMind Consulting and Services at APPIT Software?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "GenMind Consulting and Services at APPIT Software focus on delivering strategic AI-driven business solutions. We help organizations implement and scale Generative AI (GenAI) technologies across various industries with expert guidance and execution.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What do your Gen AI Software Services include?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Our Gen AI Software Services include developing custom generative AI applications such as chatbots, content automation tools, data summarization platforms, and personalized recommendation engines tailored to your business needs.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How can Legal AI Software Services help law firms or legal departments?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "APPIT Software's Legal AI Software Services streamline document review, automate contract analysis, and provide smart legal research assistance, increasing accuracy and reducing manual workload for legal professionals.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What are GenAI Application Development Services?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "GenAI Application Development Services involve creating advanced AI-powered tools and platforms that use large language models (LLMs) and machine learning to generate content, enhance decision-making, and optimize customer interactions.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What Microsoft CRM Products and Services does APPIT Software offer?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "APPIT Software provides Microsoft CRM solutions including Dynamics 365 customization, integration, and support services. We help businesses improve customer engagement, automate sales workflows, and gain actionable insights.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Why choose APPIT Software for AI and CRM services?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "APPIT Software blends cutting-edge AI capabilities with enterprise-grade CRM expertise. Whether you're looking to enhance customer management or deploy GenAI tools, we offer reliable, scalable solutions that drive innovation and performance.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
       <TransparentHeader />
       <HideDefaultHeader />
       <OracleHero data={oracleHeroData} className="md:ml-[51px] mr-auto" />

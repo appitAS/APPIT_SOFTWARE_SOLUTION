@@ -12,6 +12,9 @@ import CareerFirstSection from '../../components/career/CareerFirstSection';
 import CareerSearchBar from '../../components/career/CareerSearchBar';
 import React from 'react';
 
+
+
+
 // Main page component (doesn't use useSearchParams)
 const CareerSearchPage = () => {
   return (
